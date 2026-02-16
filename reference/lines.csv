@@ -1,0 +1,8 @@
+line_code,line_number,line_name,is_subway_line,sort_order
+YU,1,Line 1 Yonge-University,true,1
+BD,2,Line 2 Bloor-Danforth,true,2
+SRT,3,Line 3 Scarborough (closed 2023-07-24),true,3
+SHP,4,Line 4 Sheppard,true,4
+MULTI,,Multiple lines,false,5
+OTHER,,Non-subway route recorded,false,6
+UNKNOWN,,Line not recorded,false,7
