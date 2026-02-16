@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ttc-delay-analysis"
+version = "1.0.0"
+description = "TTC subway delay ETL, DuckDB star schema, KPIs, Pareto and empirical-Bayes station ranking with a Power BI (PBIP) model"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "pandas>=2.0",
+    "duckdb>=1.0",
+    "openpyxl>=3.1",
+    "requests>=2.28",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+ttc-delay = "ttc_delay.cli:main"
+
+[tool.setuptools]
+packages = ["ttc_delay"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
