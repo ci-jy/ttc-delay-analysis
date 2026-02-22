@@ -1,0 +1,2216 @@
+{
+ "network_by_year": [
+  {
+   "year": 2014,
+   "incidents": 20413.0,
+   "delay_incidents": 6278.0,
+   "delay_minutes": 41169.0,
+   "minutes_per_incident": 2.0168030176848086,
+   "yoy_change_minutes": NaN,
+   "yoy_change_incidents": NaN
+  },
+  {
+   "year": 2015,
+   "incidents": 21467.0,
+   "delay_incidents": 5058.0,
+   "delay_minutes": 35496.0,
+   "minutes_per_incident": 1.6535146969767551,
+   "yoy_change_minutes": -0.13779785761130947,
+   "yoy_change_incidents": 0.051633762798216826
+  },
+  {
+   "year": 2016,
+   "incidents": 21157.0,
+   "delay_incidents": 5698.0,
+   "delay_minutes": 38275.0,
+   "minutes_per_incident": 1.8090939169069338,
+   "yoy_change_minutes": 0.07829051160694163,
+   "yoy_change_incidents": -0.014440769553267806
+  },
+  {
+   "year": 2017,
+   "incidents": 18879.0,
+   "delay_incidents": 5451.0,
+   "delay_minutes": 36576.0,
+   "minutes_per_incident": 1.9373907516287938,
+   "yoy_change_minutes": -0.04438928804702809,
+   "yoy_change_incidents": -0.10767121992721085
+  },
+  {
+   "year": 2018,
+   "incidents": 20724.0,
+   "delay_incidents": 7165.0,
+   "delay_minutes": 48267.0,
+   "minutes_per_incident": 2.3290387955993053,
+   "yoy_change_minutes": 0.31963582677165353,
+   "yoy_change_incidents": 0.09772763387891308
+  },
+  {
+   "year": 2019,
+   "incidents": 19143.0,
+   "delay_incidents": 6753.0,
+   "delay_minutes": 45493.0,
+   "minutes_per_incident": 2.3764822650577235,
+   "yoy_change_minutes": -0.0574719787846769,
+   "yoy_change_incidents": -0.07628836132020846
+  },
+  {
+   "year": 2020,
+   "incidents": 14759.0,
+   "delay_incidents": 6869.0,
+   "delay_minutes": 46518.0,
+   "minutes_per_incident": 3.151839555525442,
+   "yoy_change_minutes": 0.022530938825753414,
+   "yoy_change_incidents": -0.2290132163192812
+  },
+  {
+   "year": 2021,
+   "incidents": 16348.0,
+   "delay_incidents": 7372.0,
+   "delay_minutes": 53480.0,
+   "minutes_per_incident": 3.271348177147052,
+   "yoy_change_minutes": 0.1496624962380154,
+   "yoy_change_incidents": 0.1076631208076428
+  },
+  {
+   "year": 2022,
+   "incidents": 19881.0,
+   "delay_incidents": 8972.0,
+   "delay_minutes": 73094.0,
+   "minutes_per_incident": 3.676575624968563,
+   "yoy_change_minutes": 0.3667539267015707,
+   "yoy_change_incidents": 0.21611206263763152
+  },
+  {
+   "year": 2023,
+   "incidents": 22943.0,
+   "delay_incidents": 8235.0,
+   "delay_minutes": 68146.0,
+   "minutes_per_incident": 2.9702305714161183,
+   "yoy_change_minutes": -0.06769365474594358,
+   "yoy_change_incidents": 0.1540163975655148
+  },
+  {
+   "year": 2024,
+   "incidents": 26450.0,
+   "delay_incidents": 9392.0,
+   "delay_minutes": 74266.0,
+   "minutes_per_incident": 2.807788279773157,
+   "yoy_change_minutes": 0.08980717870454612,
+   "yoy_change_incidents": 0.15285708059102995
+  },
+  {
+   "year": 2025,
+   "incidents": 25680.0,
+   "delay_incidents": 9092.0,
+   "delay_minutes": 70755.0,
+   "minutes_per_incident": 2.755257009345794,
+   "yoy_change_minutes": -0.04727600786362535,
+   "yoy_change_incidents": -0.029111531190926274
+  },
+  {
+   "year": 2026,
+   "incidents": 19729.0,
+   "delay_incidents": 6709.0,
+   "delay_minutes": 51293.0,
+   "minutes_per_incident": 2.5998783516650614,
+   "yoy_change_minutes": 0.051517015170151705,
+   "yoy_change_incidents": 0.13450258769407705
+  }
+ ],
+ "line_by_year": [
+  {
+   "line_code": "BD",
+   "year": 2014,
+   "incidents": 8882.0,
+   "delay_minutes": 16707.0,
+   "minutes_per_incident": 1.8809952713352849,
+   "yoy_change_minutes": NaN
+  },
+  {
+   "line_code": "BD",
+   "year": 2015,
+   "incidents": 10999.0,
+   "delay_minutes": 15168.0,
+   "minutes_per_incident": 1.3790344576779707,
+   "yoy_change_minutes": -0.09211707667444784
+  },
+  {
+   "line_code": "BD",
+   "year": 2016,
+   "incidents": 10655.0,
+   "delay_minutes": 17167.0,
+   "minutes_per_incident": 1.6111684655091507,
+   "yoy_change_minutes": 0.13179061181434598
+  },
+  {
+   "line_code": "BD",
+   "year": 2017,
+   "incidents": 8884.0,
+   "delay_minutes": 16340.0,
+   "minutes_per_incident": 1.8392615938766321,
+   "yoy_change_minutes": -0.048173821867536555
+  },
+  {
+   "line_code": "BD",
+   "year": 2018,
+   "incidents": 9144.0,
+   "delay_minutes": 18786.0,
+   "minutes_per_incident": 2.054461942257218,
+   "yoy_change_minutes": 0.14969400244798042
+  },
+  {
+   "line_code": "BD",
+   "year": 2019,
+   "incidents": 8214.0,
+   "delay_minutes": 17335.0,
+   "minutes_per_incident": 2.1104212320428535,
+   "yoy_change_minutes": -0.07723836899819014
+  },
+  {
+   "line_code": "BD",
+   "year": 2020,
+   "incidents": 5488.0,
+   "delay_minutes": 16964.0,
+   "minutes_per_incident": 3.0911078717201166,
+   "yoy_change_minutes": -0.02140178828958754
+  },
+  {
+   "line_code": "BD",
+   "year": 2021,
+   "incidents": 5739.0,
+   "delay_minutes": 19681.0,
+   "minutes_per_incident": 3.429343091130859,
+   "yoy_change_minutes": 0.16016269747701015
+  },
+  {
+   "line_code": "BD",
+   "year": 2022,
+   "incidents": 6798.0,
+   "delay_minutes": 25169.0,
+   "minutes_per_incident": 3.7024124742571343,
+   "yoy_change_minutes": 0.27884761953152787
+  },
+  {
+   "line_code": "BD",
+   "year": 2023,
+   "incidents": 9508.0,
+   "delay_minutes": 24487.0,
+   "minutes_per_incident": 2.5754101809002945,
+   "yoy_change_minutes": -0.027096825459891137
+  },
+  {
+   "line_code": "BD",
+   "year": 2024,
+   "incidents": 10989.0,
+   "delay_minutes": 29195.0,
+   "minutes_per_incident": 2.656747656747657,
+   "yoy_change_minutes": 0.19226528361987993
+  },
+  {
+   "line_code": "BD",
+   "year": 2025,
+   "incidents": 11134.0,
+   "delay_minutes": 27418.0,
+   "minutes_per_incident": 2.4625471528650977,
+   "yoy_change_minutes": -0.060866586744305534
+  },
+  {
+   "line_code": "BD",
+   "year": 2026,
+   "incidents": 8629.0,
+   "delay_minutes": 24190.0,
+   "minutes_per_incident": 2.803337582570402,
+   "yoy_change_minutes": 0.30969139144558744
+  },
+  {
+   "line_code": "SHP",
+   "year": 2014,
+   "incidents": 662.0,
+   "delay_minutes": 1557.0,
+   "minutes_per_incident": 2.3519637462235647,
+   "yoy_change_minutes": NaN
+  },
+  {
+   "line_code": "SHP",
+   "year": 2015,
+   "incidents": 673.0,
+   "delay_minutes": 1811.0,
+   "minutes_per_incident": 2.6909361069836555,
+   "yoy_change_minutes": 0.16313423249839434
+  },
+  {
+   "line_code": "SHP",
+   "year": 2016,
+   "incidents": 884.0,
+   "delay_minutes": 2410.0,
+   "minutes_per_incident": 2.726244343891403,
+   "yoy_change_minutes": 0.33075648812810604
+  },
+  {
+   "line_code": "SHP",
+   "year": 2017,
+   "incidents": 646.0,
+   "delay_minutes": 1742.0,
+   "minutes_per_incident": 2.696594427244582,
+   "yoy_change_minutes": -0.27717842323651454
+  },
+  {
+   "line_code": "SHP",
+   "year": 2018,
+   "incidents": 513.0,
+   "delay_minutes": 1323.0,
+   "minutes_per_incident": 2.5789473684210527,
+   "yoy_change_minutes": -0.24052812858783007
+  },
+  {
+   "line_code": "SHP",
+   "year": 2019,
+   "incidents": 600.0,
+   "delay_minutes": 1313.0,
+   "minutes_per_incident": 2.1883333333333335,
+   "yoy_change_minutes": -0.007558578987150416
+  },
+  {
+   "line_code": "SHP",
+   "year": 2020,
+   "incidents": 620.0,
+   "delay_minutes": 1326.0,
+   "minutes_per_incident": 2.138709677419355,
+   "yoy_change_minutes": 0.009900990099009901
+  },
+  {
+   "line_code": "SHP",
+   "year": 2021,
+   "incidents": 653.0,
+   "delay_minutes": 1715.0,
+   "minutes_per_incident": 2.6263399693721285,
+   "yoy_change_minutes": 0.2933634992458522
+  },
+  {
+   "line_code": "SHP",
+   "year": 2022,
+   "incidents": 855.0,
+   "delay_minutes": 3059.0,
+   "minutes_per_incident": 3.577777777777778,
+   "yoy_change_minutes": 0.7836734693877551
+  },
+  {
+   "line_code": "SHP",
+   "year": 2023,
+   "incidents": 732.0,
+   "delay_minutes": 2855.0,
+   "minutes_per_incident": 3.900273224043716,
+   "yoy_change_minutes": -0.06668846028113763
+  },
+  {
+   "line_code": "SHP",
+   "year": 2024,
+   "incidents": 890.0,
+   "delay_minutes": 2671.0,
+   "minutes_per_incident": 3.001123595505618,
+   "yoy_change_minutes": -0.06444833625218914
+  },
+  {
+   "line_code": "SHP",
+   "year": 2025,
+   "incidents": 1057.0,
+   "delay_minutes": 3115.0,
+   "minutes_per_incident": 2.947019867549669,
+   "yoy_change_minutes": 0.1662298764507675
+  },
+  {
+   "line_code": "SHP",
+   "year": 2026,
+   "incidents": 708.0,
+   "delay_minutes": 1839.0,
+   "minutes_per_incident": 2.597457627118644,
+   "yoy_change_minutes": -0.0900544285007422
+  },
+  {
+   "line_code": "SRT",
+   "year": 2014,
+   "incidents": 803.0,
+   "delay_minutes": 4639.0,
+   "minutes_per_incident": 5.77708592777086,
+   "yoy_change_minutes": NaN
+  },
+  {
+   "line_code": "SRT",
+   "year": 2015,
+   "incidents": 826.0,
+   "delay_minutes": 4866.0,
+   "minutes_per_incident": 5.891041162227603,
+   "yoy_change_minutes": 0.04893295968958827
+  },
+  {
+   "line_code": "SRT",
+   "year": 2016,
+   "incidents": 620.0,
+   "delay_minutes": 3605.0,
+   "minutes_per_incident": 5.814516129032258,
+   "yoy_change_minutes": -0.2591450883682696
+  },
+  {
+   "line_code": "SRT",
+   "year": 2017,
+   "incidents": 773.0,
+   "delay_minutes": 4147.0,
+   "minutes_per_incident": 5.364812419146184,
+   "yoy_change_minutes": 0.15034674063800277
+  },
+  {
+   "line_code": "SRT",
+   "year": 2018,
+   "incidents": 717.0,
+   "delay_minutes": 4098.0,
+   "minutes_per_incident": 5.7154811715481175,
+   "yoy_change_minutes": -0.011815770436460092
+  },
+  {
+   "line_code": "SRT",
+   "year": 2019,
+   "incidents": 635.0,
+   "delay_minutes": 3655.0,
+   "minutes_per_incident": 5.755905511811024,
+   "yoy_change_minutes": -0.10810151293313812
+  },
+  {
+   "line_code": "SRT",
+   "year": 2020,
+   "incidents": 641.0,
+   "delay_minutes": 3770.0,
+   "minutes_per_incident": 5.881435257410296,
+   "yoy_change_minutes": 0.03146374829001368
+  },
+  {
+   "line_code": "SRT",
+   "year": 2021,
+   "incidents": 651.0,
+   "delay_minutes": 3477.0,
+   "minutes_per_incident": 5.341013824884793,
+   "yoy_change_minutes": -0.07771883289124669
+  },
+  {
+   "line_code": "SRT",
+   "year": 2022,
+   "incidents": 1196.0,
+   "delay_minutes": 7307.0,
+   "minutes_per_incident": 6.1095317725752505,
+   "yoy_change_minutes": 1.101524302559678
+  },
+  {
+   "line_code": "SRT",
+   "year": 2023,
+   "incidents": 733.0,
+   "delay_minutes": 4839.0,
+   "minutes_per_incident": 6.601637107776262,
+   "yoy_change_minutes": -0.3377583139455317
+  },
+  {
+   "line_code": "SRT",
+   "year": 2024,
+   "incidents": 2.0,
+   "delay_minutes": 0.0,
+   "minutes_per_incident": 0.0,
+   "yoy_change_minutes": -1.0
+  },
+  {
+   "line_code": "SRT",
+   "year": 2025,
+   "incidents": 2.0,
+   "delay_minutes": 0.0,
+   "minutes_per_incident": 0.0,
+   "yoy_change_minutes": NaN
+  },
+  {
+   "line_code": "SRT",
+   "year": 2026,
+   "incidents": 4.0,
+   "delay_minutes": 0.0,
+   "minutes_per_incident": 0.0,
+   "yoy_change_minutes": NaN
+  },
+  {
+   "line_code": "YU",
+   "year": 2014,
+   "incidents": 10027.0,
+   "delay_minutes": 18266.0,
+   "minutes_per_incident": 1.821681460057844,
+   "yoy_change_minutes": NaN
+  },
+  {
+   "line_code": "YU",
+   "year": 2015,
+   "incidents": 8827.0,
+   "delay_minutes": 13651.0,
+   "minutes_per_incident": 1.5465050413504022,
+   "yoy_change_minutes": -0.252655206394394
+  },
+  {
+   "line_code": "YU",
+   "year": 2016,
+   "incidents": 8758.0,
+   "delay_minutes": 15090.0,
+   "minutes_per_incident": 1.722996117835122,
+   "yoy_change_minutes": 0.10541352281884112
+  },
+  {
+   "line_code": "YU",
+   "year": 2017,
+   "incidents": 8333.0,
+   "delay_minutes": 14347.0,
+   "minutes_per_incident": 1.7217088683547341,
+   "yoy_change_minutes": -0.04923790589794566
+  },
+  {
+   "line_code": "YU",
+   "year": 2018,
+   "incidents": 9931.0,
+   "delay_minutes": 24060.0,
+   "minutes_per_incident": 2.4227167455442555,
+   "yoy_change_minutes": 0.6770056457796055
+  },
+  {
+   "line_code": "YU",
+   "year": 2019,
+   "incidents": 9291.0,
+   "delay_minutes": 23190.0,
+   "minutes_per_incident": 2.495963835970294,
+   "yoy_change_minutes": -0.03615960099750624
+  },
+  {
+   "line_code": "YU",
+   "year": 2020,
+   "incidents": 7621.0,
+   "delay_minutes": 24458.0,
+   "minutes_per_incident": 3.209290119406902,
+   "yoy_change_minutes": 0.054678740836567485
+  },
+  {
+   "line_code": "YU",
+   "year": 2021,
+   "incidents": 8914.0,
+   "delay_minutes": 28607.0,
+   "minutes_per_incident": 3.2092214494054296,
+   "yoy_change_minutes": 0.16963774634066564
+  },
+  {
+   "line_code": "YU",
+   "year": 2022,
+   "incidents": 10647.0,
+   "delay_minutes": 37554.0,
+   "minutes_per_incident": 3.5271907579599886,
+   "yoy_change_minutes": 0.3127556192540287
+  },
+  {
+   "line_code": "YU",
+   "year": 2023,
+   "incidents": 11592.0,
+   "delay_minutes": 35965.0,
+   "minutes_per_incident": 3.1025707384403036,
+   "yoy_change_minutes": -0.04231240347233317
+  },
+  {
+   "line_code": "YU",
+   "year": 2024,
+   "incidents": 14154.0,
+   "delay_minutes": 42400.0,
+   "minutes_per_incident": 2.9956196128302954,
+   "yoy_change_minutes": 0.17892395384401502
+  },
+  {
+   "line_code": "YU",
+   "year": 2025,
+   "incidents": 13066.0,
+   "delay_minutes": 40222.0,
+   "minutes_per_incident": 3.07837134547681,
+   "yoy_change_minutes": -0.051367924528301884
+  },
+  {
+   "line_code": "YU",
+   "year": 2026,
+   "incidents": 10073.0,
+   "delay_minutes": 25264.0,
+   "minutes_per_incident": 2.5080909361659884,
+   "yoy_change_minutes": -0.10693202304782778
+  }
+ ],
+ "top_causes_all_years": [
+  {
+   "rank": 1,
+   "cause_code": "SUDP",
+   "cause_description": "DISORDERLY PATRON",
+   "cause_category": "Security & passenger behaviour",
+   "incidents": 22477,
+   "delay_minutes": 64451.0,
+   "share_of_minutes": 0.09438833791232931,
+   "cumulative_share": 0.09438833791232931
+  },
+  {
+   "rank": 2,
+   "cause_code": "MUI",
+   "cause_description": "INJURED/ILL CUSTOMER ON TRAIN \u2013 TRANSPORTED",
+   "cause_category": "Miscellaneous & customer",
+   "incidents": 5245,
+   "delay_minutes": 38604.0,
+   "share_of_minutes": 0.05653546720403967,
+   "cumulative_share": 0.150923805116369
+  },
+  {
+   "rank": 3,
+   "cause_code": "SUUT",
+   "cause_description": "UNAUTHORIZED AT TRACK LEVEL",
+   "cause_category": "Security & passenger behaviour",
+   "incidents": 4609,
+   "delay_minutes": 38570.0,
+   "share_of_minutes": 0.0564856742840071,
+   "cumulative_share": 0.20740947940037607
+  },
+  {
+   "rank": 4,
+   "cause_code": "MUIR",
+   "cause_description": "INJURED/ILL CUSTOMER ON TRAIN \u2013 MEDICAL AID REFUSED",
+   "cause_category": "Miscellaneous & customer",
+   "incidents": 7883,
+   "delay_minutes": 34553.0,
+   "share_of_minutes": 0.050602787231923706,
+   "cumulative_share": 0.2580122666322998
+  },
+  {
+   "rank": 5,
+   "cause_code": "MUPR1",
+   "cause_description": "PRIORITY ONE \u2013 TRAIN IN CONTACT WITH PERSON",
+   "cause_category": "Miscellaneous & customer",
+   "incidents": 402,
+   "delay_minutes": 30753.0,
+   "share_of_minutes": 0.045037696169459955,
+   "cumulative_share": 0.3030499628017597
+  },
+  {
+   "rank": 6,
+   "cause_code": "SUO",
+   "cause_description": "SECURITY OTHER",
+   "cause_category": "Security & passenger behaviour",
+   "incidents": 11857,
+   "delay_minutes": 29707.0,
+   "share_of_minutes": 0.0435058316296344,
+   "cumulative_share": 0.34655579443139417
+  },
+  {
+   "rank": 7,
+   "cause_code": "MUPLB",
+   "cause_description": "FIRE/SMOKE PLAN B \u2013 SOURCE TTC (TRACK LEVEL)",
+   "cause_category": "Miscellaneous & customer",
+   "incidents": 1353,
+   "delay_minutes": 25643.0,
+   "share_of_minutes": 0.03755411318809422,
+   "cumulative_share": 0.3841099076194884
+  },
+  {
+   "rank": 8,
+   "cause_code": "MUPAA",
+   "cause_description": "PAA \u2013 NO TROUBLE FOUND",
+   "cause_category": "Miscellaneous & customer",
+   "incidents": 17010,
+   "delay_minutes": 22016.0,
+   "share_of_minutes": 0.03224238021873737,
+   "cumulative_share": 0.41635228783822575
+  },
+  {
+   "rank": 9,
+   "cause_code": "PUOPO",
+   "cause_description": "OPTO (COMMUNICATIONS) TRAIN DOOR MONITORING",
+   "cause_category": "Plant (track, signals, power, stations)",
+   "incidents": 6528,
+   "delay_minutes": 19438.0,
+   "share_of_minutes": 0.028466905282150116,
+   "cumulative_share": 0.4448191931203758
+  },
+  {
+   "rank": 10,
+   "cause_code": "MUATC",
+   "cause_description": "ATC PROJECT",
+   "cause_category": "Miscellaneous & customer",
+   "incidents": 3366,
+   "delay_minutes": 15799.0,
+   "share_of_minutes": 0.023137598341017064,
+   "cumulative_share": 0.4679567914613929
+  }
+ ],
+ "top_causes_last_full_year": [
+  {
+   "rank": 1,
+   "cause_code": "SUDP",
+   "cause_description": "DISORDERLY PATRON",
+   "incidents": 2943,
+   "delay_minutes": 7641.0,
+   "share_of_minutes": 0.10799236803052788,
+   "cumulative_share": 0.10799236803052788
+  },
+  {
+   "rank": 2,
+   "cause_code": "MUIR",
+   "cause_description": "INJURED/ILL CUSTOMER ON TRAIN \u2013 MEDICAL AID REFUSED",
+   "incidents": 841,
+   "delay_minutes": 4797.0,
+   "share_of_minutes": 0.06779732881068476,
+   "cumulative_share": 0.17578969684121262
+  },
+  {
+   "rank": 3,
+   "cause_code": "SUUT",
+   "cause_description": "UNAUTHORIZED AT TRACK LEVEL",
+   "incidents": 571,
+   "delay_minutes": 3917.0,
+   "share_of_minutes": 0.05536004522648576,
+   "cumulative_share": 0.2311497420676984
+  },
+  {
+   "rank": 4,
+   "cause_code": "MUI",
+   "cause_description": "INJURED/ILL CUSTOMER ON TRAIN \u2013 TRANSPORTED",
+   "incidents": 412,
+   "delay_minutes": 3785.0,
+   "share_of_minutes": 0.053494452688855915,
+   "cumulative_share": 0.2846441947565543
+  },
+  {
+   "rank": 5,
+   "cause_code": "SUO",
+   "cause_description": "SECURITY OTHER",
+   "incidents": 1678,
+   "delay_minutes": 3418.0,
+   "share_of_minutes": 0.04830754010317292,
+   "cumulative_share": 0.33295173485972723
+  },
+  {
+   "rank": 6,
+   "cause_code": "PUOPO",
+   "cause_description": "OPTO (COMMUNICATIONS) TRAIN DOOR MONITORING",
+   "incidents": 1255,
+   "delay_minutes": 3398.0,
+   "share_of_minutes": 0.0480248745671684,
+   "cumulative_share": 0.38097660942689565
+  },
+  {
+   "rank": 7,
+   "cause_code": "MUPAA",
+   "cause_description": "PAA \u2013 NO TROUBLE FOUND",
+   "incidents": 1367,
+   "delay_minutes": 2955.0,
+   "share_of_minutes": 0.04176383294466822,
+   "cumulative_share": 0.42274044237156383
+  },
+  {
+   "rank": 8,
+   "cause_code": "MUWEA",
+   "cause_description": "WEATHER REPORTS / RELATED PROBLEMS",
+   "incidents": 211,
+   "delay_minutes": 2745.0,
+   "share_of_minutes": 0.03879584481662073,
+   "cumulative_share": 0.46153628718818457
+  },
+  {
+   "rank": 9,
+   "cause_code": "PUTWZ",
+   "cause_description": "WORK ZONES PROBLEMS \u2013 TRACK",
+   "incidents": 244,
+   "delay_minutes": 2333.0,
+   "share_of_minutes": 0.03297293477492757,
+   "cumulative_share": 0.49450922196311214
+  },
+  {
+   "rank": 10,
+   "cause_code": "TUO",
+   "cause_description": "TRANSPORTATION OTHER",
+   "incidents": 451,
+   "delay_minutes": 1955.0,
+   "share_of_minutes": 0.027630556144442087,
+   "cumulative_share": 0.5221397781075542
+  }
+ ],
+ "pareto_network_by_year": [
+  {
+   "year": "2014",
+   "delay_minutes": 41169.0,
+   "causes_with_minutes": 149,
+   "causes_to_80pct": 39,
+   "share_of_causes_to_80pct": 0.26174496644295303,
+   "top_cause_share": 0.08338798610605067
+  },
+  {
+   "year": "2015",
+   "delay_minutes": 35496.0,
+   "causes_with_minutes": 143,
+   "causes_to_80pct": 37,
+   "share_of_causes_to_80pct": 0.25874125874125875,
+   "top_cause_share": 0.0835868830290737
+  },
+  {
+   "year": "2016",
+   "delay_minutes": 38275.0,
+   "causes_with_minutes": 144,
+   "causes_to_80pct": 37,
+   "share_of_causes_to_80pct": 0.2569444444444444,
+   "top_cause_share": 0.0883082952318746
+  },
+  {
+   "year": "2017",
+   "delay_minutes": 36576.0,
+   "causes_with_minutes": 160,
+   "causes_to_80pct": 39,
+   "share_of_causes_to_80pct": 0.24375,
+   "top_cause_share": 0.0724245406824147
+  },
+  {
+   "year": "2018",
+   "delay_minutes": 48267.0,
+   "causes_with_minutes": 166,
+   "causes_to_80pct": 41,
+   "share_of_causes_to_80pct": 0.2469879518072289,
+   "top_cause_share": 0.07468871071332381
+  },
+  {
+   "year": "2019",
+   "delay_minutes": 45493.0,
+   "causes_with_minutes": 172,
+   "causes_to_80pct": 40,
+   "share_of_causes_to_80pct": 0.23255813953488372,
+   "top_cause_share": 0.08289187347504011
+  },
+  {
+   "year": "2020",
+   "delay_minutes": 46518.0,
+   "causes_with_minutes": 163,
+   "causes_to_80pct": 36,
+   "share_of_causes_to_80pct": 0.22085889570552147,
+   "top_cause_share": 0.10563652779569199
+  },
+  {
+   "year": "2021",
+   "delay_minutes": 53480.0,
+   "causes_with_minutes": 158,
+   "causes_to_80pct": 33,
+   "share_of_causes_to_80pct": 0.2088607594936709,
+   "top_cause_share": 0.12761780104712042
+  },
+  {
+   "year": "2022",
+   "delay_minutes": 73094.0,
+   "causes_with_minutes": 166,
+   "causes_to_80pct": 35,
+   "share_of_causes_to_80pct": 0.21084337349397592,
+   "top_cause_share": 0.08539688620132979
+  },
+  {
+   "year": "2023",
+   "delay_minutes": 68146.0,
+   "causes_with_minutes": 161,
+   "causes_to_80pct": 25,
+   "share_of_causes_to_80pct": 0.15527950310559005,
+   "top_cause_share": 0.13504827869574149
+  },
+  {
+   "year": "2024",
+   "delay_minutes": 74266.0,
+   "causes_with_minutes": 115,
+   "causes_to_80pct": 24,
+   "share_of_causes_to_80pct": 0.20869565217391303,
+   "top_cause_share": 0.11536907871704413
+  },
+  {
+   "year": "2025",
+   "delay_minutes": 70755.0,
+   "causes_with_minutes": 118,
+   "causes_to_80pct": 29,
+   "share_of_causes_to_80pct": 0.2457627118644068,
+   "top_cause_share": 0.10799236803052788
+  },
+  {
+   "year": "2026",
+   "delay_minutes": 51293.0,
+   "causes_with_minutes": 117,
+   "causes_to_80pct": 27,
+   "share_of_causes_to_80pct": 0.23076923076923078,
+   "top_cause_share": 0.08763379018579533
+  },
+  {
+   "year": "ALL",
+   "delay_minutes": 682828.0,
+   "causes_with_minutes": 207,
+   "causes_to_80pct": 41,
+   "share_of_causes_to_80pct": 0.19806763285024154,
+   "top_cause_share": 0.09438833791232931
+  }
+ ],
+ "pareto_by_line_all_years": [
+  {
+   "line": "ALL",
+   "delay_minutes": 682828.0,
+   "causes_with_minutes": 207,
+   "causes_to_80pct": 41,
+   "share_of_causes_to_80pct": 0.19806763285024154,
+   "top_cause_share": 0.09438833791232931
+  },
+  {
+   "line": "YU",
+   "delay_minutes": 343074.0,
+   "causes_with_minutes": 133,
+   "causes_to_80pct": 28,
+   "share_of_causes_to_80pct": 0.21052631578947367,
+   "top_cause_share": 0.10582848015296992
+  },
+  {
+   "line": "BD",
+   "delay_minutes": 268607.0,
+   "causes_with_minutes": 124,
+   "causes_to_80pct": 32,
+   "share_of_causes_to_80pct": 0.25806451612903225,
+   "top_cause_share": 0.09918207641647463
+  },
+  {
+   "line": "SRT",
+   "delay_minutes": 44403.0,
+   "causes_with_minutes": 67,
+   "causes_to_80pct": 22,
+   "share_of_causes_to_80pct": 0.3283582089552239,
+   "top_cause_share": 0.09443055649393059
+  },
+  {
+   "line": "SHP",
+   "delay_minutes": 26736.0,
+   "causes_with_minutes": 102,
+   "causes_to_80pct": 32,
+   "share_of_causes_to_80pct": 0.3137254901960784,
+   "top_cause_share": 0.08389437462597248
+  }
+ ],
+ "category_share_by_year": [
+  {
+   "year": 2014,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 19621.0,
+   "share_of_minutes": 0.4765964682163764
+  },
+  {
+   "year": 2014,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 6482.0,
+   "share_of_minutes": 0.15744856566834267
+  },
+  {
+   "year": 2014,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 6149.0,
+   "share_of_minutes": 0.149359955306177
+  },
+  {
+   "year": 2014,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 5797.0,
+   "share_of_minutes": 0.1408098326410649
+  },
+  {
+   "year": 2014,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 3120.0,
+   "share_of_minutes": 0.07578517816803906
+  },
+  {
+   "year": 2015,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 15047.0,
+   "share_of_minutes": 0.42390691908947487
+  },
+  {
+   "year": 2015,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 7107.0,
+   "share_of_minutes": 0.20021974306964166
+  },
+  {
+   "year": 2015,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 6319.0,
+   "share_of_minutes": 0.1780200585981519
+  },
+  {
+   "year": 2015,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 4223.0,
+   "share_of_minutes": 0.11897115167906243
+  },
+  {
+   "year": 2015,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 2800.0,
+   "share_of_minutes": 0.07888212756366915
+  },
+  {
+   "year": 2016,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 16887.0,
+   "share_of_minutes": 0.4412018288700196
+  },
+  {
+   "year": 2016,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 7089.0,
+   "share_of_minutes": 0.18521227955584585
+  },
+  {
+   "year": 2016,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 6130.0,
+   "share_of_minutes": 0.16015676028739387
+  },
+  {
+   "year": 2016,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 5298.0,
+   "share_of_minutes": 0.13841933376877857
+  },
+  {
+   "year": 2016,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 2871.0,
+   "share_of_minutes": 0.07500979751796212
+  },
+  {
+   "year": 2017,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 15862.0,
+   "share_of_minutes": 0.433672353455818
+  },
+  {
+   "year": 2017,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 7522.0,
+   "share_of_minutes": 0.20565398075240596
+  },
+  {
+   "year": 2017,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 6017.0,
+   "share_of_minutes": 0.1645067804024497
+  },
+  {
+   "year": 2017,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 4169.0,
+   "share_of_minutes": 0.11398184601924759
+  },
+  {
+   "year": 2017,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 3006.0,
+   "share_of_minutes": 0.08218503937007875
+  },
+  {
+   "year": 2017,
+   "cause_category": "Other / unknown",
+   "delay_minutes": 0.0,
+   "share_of_minutes": 0.0
+  },
+  {
+   "year": 2018,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 21621.0,
+   "share_of_minutes": 0.44794580147927154
+  },
+  {
+   "year": 2018,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 10191.0,
+   "share_of_minutes": 0.21113804462676364
+  },
+  {
+   "year": 2018,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 6407.0,
+   "share_of_minutes": 0.13274079598897798
+  },
+  {
+   "year": 2018,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 5048.0,
+   "share_of_minutes": 0.1045849130876168
+  },
+  {
+   "year": 2018,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 5000.0,
+   "share_of_minutes": 0.10359044481737005
+  },
+  {
+   "year": 2019,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 20326.0,
+   "share_of_minutes": 0.44679401226562326
+  },
+  {
+   "year": 2019,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 9295.0,
+   "share_of_minutes": 0.20431714769305168
+  },
+  {
+   "year": 2019,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 5437.0,
+   "share_of_minutes": 0.11951289209328908
+  },
+  {
+   "year": 2019,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 5327.0,
+   "share_of_minutes": 0.11709493768272042
+  },
+  {
+   "year": 2019,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 5108.0,
+   "share_of_minutes": 0.11228101026531555
+  },
+  {
+   "year": 2020,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 20453.0,
+   "share_of_minutes": 0.4396792639408401
+  },
+  {
+   "year": 2020,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 10284.0,
+   "share_of_minutes": 0.22107571262737005
+  },
+  {
+   "year": 2020,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 5457.0,
+   "share_of_minutes": 0.11730942860828067
+  },
+  {
+   "year": 2020,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 5177.0,
+   "share_of_minutes": 0.11129025323530677
+  },
+  {
+   "year": 2020,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 5147.0,
+   "share_of_minutes": 0.11064534158820241
+  },
+  {
+   "year": 2020,
+   "cause_category": "Other / unknown",
+   "delay_minutes": 0.0,
+   "share_of_minutes": 0.0
+  },
+  {
+   "year": 2021,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 19415.0,
+   "share_of_minutes": 0.36303290949887806
+  },
+  {
+   "year": 2021,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 16548.0,
+   "share_of_minutes": 0.3094240837696335
+  },
+  {
+   "year": 2021,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 7034.0,
+   "share_of_minutes": 0.13152580403889305
+  },
+  {
+   "year": 2021,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 5898.0,
+   "share_of_minutes": 0.11028421839940164
+  },
+  {
+   "year": 2021,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 4585.0,
+   "share_of_minutes": 0.08573298429319372
+  },
+  {
+   "year": 2021,
+   "cause_category": "Other / unknown",
+   "delay_minutes": 0.0,
+   "share_of_minutes": 0.0
+  },
+  {
+   "year": 2022,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 26294.0,
+   "share_of_minutes": 0.35972856869236874
+  },
+  {
+   "year": 2022,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 23276.0,
+   "share_of_minutes": 0.3184392699811202
+  },
+  {
+   "year": 2022,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 11061.0,
+   "share_of_minutes": 0.15132569020713055
+  },
+  {
+   "year": 2022,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 7145.0,
+   "share_of_minutes": 0.0977508413823296
+  },
+  {
+   "year": 2022,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 5318.0,
+   "share_of_minutes": 0.07275562973705092
+  },
+  {
+   "year": 2022,
+   "cause_category": "Other / unknown",
+   "delay_minutes": 0.0,
+   "share_of_minutes": 0.0
+  },
+  {
+   "year": 2023,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 26465.0,
+   "share_of_minutes": 0.38835735039474073
+  },
+  {
+   "year": 2023,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 22569.0,
+   "share_of_minutes": 0.3311859830364218
+  },
+  {
+   "year": 2023,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 9012.0,
+   "share_of_minutes": 0.13224547295512576
+  },
+  {
+   "year": 2023,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 6099.0,
+   "share_of_minutes": 0.08949901681683445
+  },
+  {
+   "year": 2023,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 4001.0,
+   "share_of_minutes": 0.05871217679687729
+  },
+  {
+   "year": 2023,
+   "cause_category": "Other / unknown",
+   "delay_minutes": 0.0,
+   "share_of_minutes": 0.0
+  },
+  {
+   "year": 2024,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 26003.0,
+   "share_of_minutes": 0.35013330460776126
+  },
+  {
+   "year": 2024,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 24983.0,
+   "share_of_minutes": 0.33639889047477983
+  },
+  {
+   "year": 2024,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 12875.0,
+   "share_of_minutes": 0.17336331564915305
+  },
+  {
+   "year": 2024,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 5707.0,
+   "share_of_minutes": 0.07684539358522069
+  },
+  {
+   "year": 2024,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 4698.0,
+   "share_of_minutes": 0.06325909568308513
+  },
+  {
+   "year": 2024,
+   "cause_category": "Other / unknown",
+   "delay_minutes": 0.0,
+   "share_of_minutes": 0.0
+  },
+  {
+   "year": 2025,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 24132.0,
+   "share_of_minutes": 0.34106423574305705
+  },
+  {
+   "year": 2025,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 19020.0,
+   "share_of_minutes": 0.26881492474030105
+  },
+  {
+   "year": 2025,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 16157.0,
+   "share_of_minutes": 0.2283513532612536
+  },
+  {
+   "year": 2025,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 5888.0,
+   "share_of_minutes": 0.08321673379973146
+  },
+  {
+   "year": 2025,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 5558.0,
+   "share_of_minutes": 0.07855275245565685
+  },
+  {
+   "year": 2025,
+   "cause_category": "Other / unknown",
+   "delay_minutes": 0.0,
+   "share_of_minutes": 0.0
+  },
+  {
+   "year": 2026,
+   "cause_category": "Miscellaneous & customer",
+   "delay_minutes": 17680.0,
+   "share_of_minutes": 0.3446864094515821
+  },
+  {
+   "year": 2026,
+   "cause_category": "Security & passenger behaviour",
+   "delay_minutes": 12756.0,
+   "share_of_minutes": 0.24868890491879983
+  },
+  {
+   "year": 2026,
+   "cause_category": "Plant (track, signals, power, stations)",
+   "delay_minutes": 11899.0,
+   "share_of_minutes": 0.23198097206246465
+  },
+  {
+   "year": 2026,
+   "cause_category": "Equipment (rolling stock)",
+   "delay_minutes": 5046.0,
+   "share_of_minutes": 0.09837599672469928
+  },
+  {
+   "year": 2026,
+   "cause_category": "Transportation (operations & crew)",
+   "delay_minutes": 3912.0,
+   "share_of_minutes": 0.07626771684245413
+  },
+  {
+   "year": 2026,
+   "cause_category": "Other / unknown",
+   "delay_minutes": 0.0,
+   "share_of_minutes": 0.0
+  }
+ ],
+ "ranking_all_years_top15": [
+  {
+   "shrunk_rank": 1,
+   "naive_rank": 1,
+   "count_rank": 68,
+   "station_label": "Kennedy (Line 3)",
+   "incidents": 1446,
+   "naive_minutes_per_incident": 7.799446749654218,
+   "line_minutes_per_incident": 6.598661661498286,
+   "shrinkage_weight": 0.6565167744322112,
+   "shrunk_minutes_per_incident": 7.011111196791788,
+   "explanation": "Stable: 1,446 incidents; estimate moved 66% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 2,
+   "naive_rank": 2,
+   "count_rank": 55,
+   "station_label": "McCowan (Line 3)",
+   "incidents": 1904,
+   "naive_minutes_per_incident": 7.011029411764706,
+   "line_minutes_per_incident": 6.598661661498286,
+   "shrinkage_weight": 0.5921001599496342,
+   "shrunk_minutes_per_incident": 6.766866400873888,
+   "explanation": "Stable: 1,904 incidents; estimate moved 59% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 3,
+   "naive_rank": 3,
+   "count_rank": 76,
+   "station_label": "Lawrence East (Line 3)",
+   "incidents": 788,
+   "naive_minutes_per_incident": 6.722081218274112,
+   "line_minutes_per_incident": 6.598661661498286,
+   "shrinkage_weight": 0.7781414461365417,
+   "shrunk_minutes_per_incident": 6.626043345883041,
+   "explanation": "Stable: 788 incidents; estimate moved 78% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 4,
+   "naive_rank": 4,
+   "count_rank": 80,
+   "station_label": "Ellesmere (Line 3)",
+   "incidents": 449,
+   "naive_minutes_per_incident": 6.443207126948775,
+   "line_minutes_per_incident": 6.598661661498286,
+   "shrinkage_weight": 0.8602470606507402,
+   "shrunk_minutes_per_incident": 6.576936433359821,
+   "explanation": "Stable: 449 incidents; estimate moved 86% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 5,
+   "naive_rank": 5,
+   "count_rank": 79,
+   "station_label": "Midland (Line 3)",
+   "incidents": 500,
+   "naive_minutes_per_incident": 5.844,
+   "line_minutes_per_incident": 6.598661661498286,
+   "shrinkage_weight": 0.8468049284280974,
+   "shrunk_minutes_per_incident": 6.483051214252486,
+   "explanation": "Stable: 500 incidents; estimate moved 85% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 6,
+   "naive_rank": 6,
+   "count_rank": 73,
+   "station_label": "Scarborough Centre (Line 3)",
+   "incidents": 1040,
+   "naive_minutes_per_incident": 4.510576923076923,
+   "line_minutes_per_incident": 6.598661661498286,
+   "shrinkage_weight": 0.7265901036598089,
+   "shrunk_minutes_per_incident": 6.027758629616966,
+   "explanation": "Stable: 1,040 incidents; estimate moved 73% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 7,
+   "naive_rank": 8,
+   "count_rank": 59,
+   "station_label": "Summerhill (Line 1)",
+   "incidents": 1784,
+   "naive_minutes_per_incident": 3.908071748878924,
+   "line_minutes_per_incident": 2.6746092460320656,
+   "shrinkage_weight": 0.18533325363713593,
+   "shrunk_minutes_per_incident": 3.6794701299869104,
+   "explanation": "Stable: 1,784 incidents; estimate moved 19% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 8,
+   "naive_rank": 7,
+   "count_rank": 61,
+   "station_label": "Castle Frank (Line 2)",
+   "incidents": 1747,
+   "naive_minutes_per_incident": 3.974813966800229,
+   "line_minutes_per_incident": 2.4036535169198268,
+   "shrinkage_weight": 0.19939862335578606,
+   "shrunk_minutes_per_incident": 3.6615267360230193,
+   "explanation": "Stable: 1,747 incidents; estimate moved 20% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 9,
+   "naive_rank": 9,
+   "count_rank": 72,
+   "station_label": "Highway 407 (Line 1)",
+   "incidents": 1047,
+   "naive_minutes_per_incident": 3.7956064947468957,
+   "line_minutes_per_incident": 2.6746092460320656,
+   "shrinkage_weight": 0.27934872266918653,
+   "shrunk_minutes_per_incident": 3.4824573452027354,
+   "explanation": "Stable: 1,047 incidents; estimate moved 28% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 10,
+   "naive_rank": 10,
+   "count_rank": 63,
+   "station_label": "Museum (Line 1)",
+   "incidents": 1699,
+   "naive_minutes_per_incident": 3.6215420835785754,
+   "line_minutes_per_incident": 2.6746092460320656,
+   "shrinkage_weight": 0.19281754370589588,
+   "shrunk_minutes_per_incident": 3.4389568197884035,
+   "explanation": "Stable: 1,699 incidents; estimate moved 19% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 11,
+   "naive_rank": 11,
+   "count_rank": 41,
+   "station_label": "Rosedale (Line 1)",
+   "incidents": 2592,
+   "naive_minutes_per_incident": 3.5536265432098766,
+   "line_minutes_per_incident": 2.6746092460320656,
+   "shrinkage_weight": 0.13538107299285562,
+   "shrunk_minutes_per_incident": 3.4346242383386647,
+   "explanation": "Stable: 2,592 incidents; estimate moved 14% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 12,
+   "naive_rank": 13,
+   "count_rank": 18,
+   "station_label": "Davisville (Line 1)",
+   "incidents": 4067,
+   "naive_minutes_per_incident": 3.3137447750184412,
+   "line_minutes_per_incident": 2.6746092460320656,
+   "shrinkage_weight": 0.09073683684206413,
+   "shrunk_minutes_per_incident": 3.255751638804838,
+   "explanation": "Stable: 4,067 incidents; estimate moved 9% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 13,
+   "naive_rank": 14,
+   "count_rank": 9,
+   "station_label": "Sheppard West (Downsview) (Line 1)",
+   "incidents": 5318,
+   "naive_minutes_per_incident": 3.2367431365174877,
+   "line_minutes_per_incident": 2.6746092460320656,
+   "shrinkage_weight": 0.07090547620483435,
+   "shrunk_minutes_per_incident": 3.1968847653217427,
+   "explanation": "Stable: 5,318 incidents; estimate moved 7% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 14,
+   "naive_rank": 12,
+   "count_rank": 75,
+   "station_label": "Downsview Park (Line 1)",
+   "incidents": 892,
+   "naive_minutes_per_incident": 3.32847533632287,
+   "line_minutes_per_incident": 2.6746092460320656,
+   "shrinkage_weight": 0.31271079769077614,
+   "shrunk_minutes_per_incident": 3.1240043496450838,
+   "explanation": "Stable: 892 incidents; estimate moved 31% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 15,
+   "naive_rank": 16,
+   "count_rank": 5,
+   "station_label": "Eglinton (Line 1)",
+   "incidents": 7128,
+   "naive_minutes_per_incident": 3.095258136924804,
+   "line_minutes_per_incident": 2.6746092460320656,
+   "shrinkage_weight": 0.05387051140233413,
+   "shrunk_minutes_per_incident": 3.072597566051587,
+   "explanation": "Stable: 7,128 incidents; estimate moved 5% of the way to the line rate."
+  }
+ ],
+ "ranking_all_years_movers": [
+  {
+   "station_label": "Leslie (Line 4)",
+   "incidents": 1327,
+   "naive_rank": 42,
+   "shrunk_rank": 36,
+   "rank_change": 6,
+   "shrinkage_weight": 0.22681463224678633,
+   "explanation": "Rose 6 places: 1,327 incidents make its rate reliable, while small-sample stations ranked above it were pulled toward their line rates."
+  },
+  {
+   "station_label": "Pioneer Village (Line 1)",
+   "incidents": 977,
+   "naive_rank": 55,
+   "shrunk_rank": 49,
+   "rank_change": 6,
+   "shrinkage_weight": 0.29348935645411084,
+   "explanation": "Rose 6 places: few incidents (977), so it was pulled up toward its line rate (2.67 min)."
+  },
+  {
+   "station_label": "Chester (Line 2)",
+   "incidents": 1860,
+   "naive_rank": 48,
+   "shrunk_rank": 53,
+   "rank_change": -5,
+   "shrinkage_weight": 0.18958120817744648,
+   "explanation": "Dropped 5 places: its well-measured rate (1,860 incidents) was overtaken by stations pulled down less, or pulled toward a higher line rate."
+  },
+  {
+   "station_label": "Dufferin (Line 2)",
+   "incidents": 2241,
+   "naive_rank": 54,
+   "shrunk_rank": 58,
+   "rank_change": -4,
+   "shrinkage_weight": 0.16259037094810808,
+   "explanation": "Dropped 4 places: its well-measured rate (2,241 incidents) was overtaken by stations pulled down less, or pulled toward a higher line rate."
+  },
+  {
+   "station_label": "Ossington (Line 2)",
+   "incidents": 2935,
+   "naive_rank": 36,
+   "shrunk_rank": 40,
+   "rank_change": -4,
+   "shrinkage_weight": 0.12910845827190795,
+   "explanation": "Dropped 4 places: its well-measured rate (2,935 incidents) was overtaken by stations pulled down less, or pulled toward a higher line rate."
+  },
+  {
+   "station_label": "High Park (Line 2)",
+   "incidents": 1717,
+   "naive_rank": 41,
+   "shrunk_rank": 44,
+   "rank_change": -3,
+   "shrinkage_weight": 0.20217820229833036,
+   "explanation": "Dropped 3 places: its well-measured rate (1,717 incidents) was overtaken by stations pulled down less, or pulled toward a higher line rate."
+  },
+  {
+   "station_label": "Lansdowne (Line 2)",
+   "incidents": 1563,
+   "naive_rank": 19,
+   "shrunk_rank": 22,
+   "rank_change": -3,
+   "shrinkage_weight": 0.2177606519176492,
+   "explanation": "Dropped 3 places: its well-measured rate (1,563 incidents) was overtaken by stations pulled down less, or pulled toward a higher line rate."
+  },
+  {
+   "station_label": "Osgoode (Line 1)",
+   "incidents": 1670,
+   "naive_rank": 51,
+   "shrunk_rank": 48,
+   "rank_change": 3,
+   "shrinkage_weight": 0.19551123644392485,
+   "explanation": "Rose 3 places: 1,670 incidents make its rate reliable, while small-sample stations ranked above it were pulled toward their line rates."
+  },
+  {
+   "station_label": "Vaughan Metropolitan Centre (Line 1)",
+   "incidents": 5477,
+   "naive_rank": 46,
+   "shrunk_rank": 43,
+   "rank_change": 3,
+   "shrinkage_weight": 0.06898906392985535,
+   "explanation": "Rose 3 places: 5,477 incidents make its rate reliable, while small-sample stations ranked above it were pulled toward their line rates."
+  },
+  {
+   "station_label": "York University (Line 1)",
+   "incidents": 661,
+   "naive_rank": 29,
+   "shrunk_rank": 32,
+   "rank_change": -3,
+   "shrinkage_weight": 0.3804204343992925,
+   "explanation": "Dropped 3 places: only 661 incidents, so 38% of its gap to the line rate (2.67 min) is treated as noise."
+  }
+ ],
+ "ranking_last_36_months_top15": [
+  {
+   "shrunk_rank": 1,
+   "naive_rank": 1,
+   "count_rank": 55,
+   "station_label": "Yorkdale (Line 1)",
+   "incidents": 617,
+   "naive_minutes_per_incident": 5.367909238249595,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.21271046054791926,
+   "shrunk_minutes_per_incident": 4.838427922847326,
+   "explanation": "Stable: 617 incidents; estimate moved 21% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 2,
+   "naive_rank": 2,
+   "count_rank": 70,
+   "station_label": "Glencairn (Line 1)",
+   "incidents": 423,
+   "naive_minutes_per_incident": 5.33096926713948,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.28268794699549676,
+   "shrunk_minutes_per_incident": 4.637741675340741,
+   "explanation": "Stable: 423 incidents; estimate moved 28% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 3,
+   "naive_rank": 4,
+   "count_rank": 26,
+   "station_label": "Sheppard West (Downsview) (Line 1)",
+   "incidents": 1038,
+   "naive_minutes_per_incident": 4.703275529865126,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.13837577828013847,
+   "shrunk_minutes_per_incident": 4.450798163879121,
+   "explanation": "Stable: 1,038 incidents; estimate moved 14% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 4,
+   "naive_rank": 3,
+   "count_rank": 64,
+   "station_label": "Museum (Line 1)",
+   "incidents": 520,
+   "naive_minutes_per_incident": 4.873076923076923,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.2427568699501245,
+   "shrunk_minutes_per_incident": 4.3889276851329155,
+   "explanation": "Stable: 520 incidents; estimate moved 24% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 5,
+   "naive_rank": 5,
+   "count_rank": 45,
+   "station_label": "Rosedale (Line 1)",
+   "incidents": 768,
+   "naive_minutes_per_incident": 4.701822916666667,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.17834731976197765,
+   "shrunk_minutes_per_incident": 4.376673435188894,
+   "explanation": "Stable: 768 incidents; estimate moved 18% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 6,
+   "naive_rank": 6,
+   "count_rank": 37,
+   "station_label": "Lawrence (Line 1)",
+   "incidents": 877,
+   "naive_minutes_per_incident": 4.657924743443558,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.15972144091777107,
+   "shrunk_minutes_per_incident": 4.373744049335224,
+   "explanation": "Stable: 877 incidents; estimate moved 16% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 7,
+   "naive_rank": 7,
+   "count_rank": 38,
+   "station_label": "York Mills (Line 1)",
+   "incidents": 872,
+   "naive_minutes_per_incident": 4.223623853211009,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.16049029240951881,
+   "shrunk_minutes_per_incident": 4.007776274665834,
+   "explanation": "Stable: 872 incidents; estimate moved 16% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 8,
+   "naive_rank": 8,
+   "count_rank": 61,
+   "station_label": "Summerhill (Line 1)",
+   "incidents": 557,
+   "naive_minutes_per_incident": 4.190305206463195,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.2303456699210391,
+   "shrunk_minutes_per_incident": 3.8881821154477567,
+   "explanation": "Stable: 557 incidents; estimate moved 23% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 9,
+   "naive_rank": 11,
+   "count_rank": 18,
+   "station_label": "Davisville (Line 1)",
+   "incidents": 1160,
+   "naive_minutes_per_incident": 3.996551724137931,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.12565110371160487,
+   "shrunk_minutes_per_incident": 3.8560921424358967,
+   "explanation": "Stable: 1,160 incidents; estimate moved 13% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 10,
+   "naive_rank": 9,
+   "count_rank": 56,
+   "station_label": "Old Mill (Line 2)",
+   "incidents": 599,
+   "naive_minutes_per_incident": 4.176961602671119,
+   "line_minutes_per_incident": 2.6081385439493547,
+   "shrinkage_weight": 0.2350702913623536,
+   "shrunk_minutes_per_incident": 3.808177909161415,
+   "explanation": "Stable: 599 incidents; estimate moved 24% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 11,
+   "naive_rank": 12,
+   "count_rank": 34,
+   "station_label": "Sheppard-Yonge (Line 4)",
+   "incidents": 905,
+   "naive_minutes_per_incident": 3.876243093922652,
+   "line_minutes_per_incident": 3.1186986056489094,
+   "shrinkage_weight": 0.14378600651626444,
+   "shrunk_minutes_per_incident": 3.767318797195364,
+   "explanation": "Stable: 905 incidents; estimate moved 14% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 12,
+   "naive_rank": 10,
+   "count_rank": 58,
+   "station_label": "Castle Frank (Line 2)",
+   "incidents": 580,
+   "naive_minutes_per_incident": 4.068965517241379,
+   "line_minutes_per_incident": 2.6081385439493547,
+   "shrinkage_weight": 0.24091567976613534,
+   "shrunk_minutes_per_incident": 3.7170293939500247,
+   "explanation": "Stable: 580 incidents; estimate moved 24% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 13,
+   "naive_rank": 13,
+   "count_rank": 35,
+   "station_label": "Woodbine (Line 2)",
+   "incidents": 904,
+   "naive_minutes_per_incident": 3.827433628318584,
+   "line_minutes_per_incident": 2.6081385439493547,
+   "shrinkage_weight": 0.1691775826768311,
+   "shrunk_minutes_per_incident": 3.6211562333752547,
+   "explanation": "Stable: 904 incidents; estimate moved 17% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 14,
+   "naive_rank": 15,
+   "count_rank": 10,
+   "station_label": "Wilson (Line 1)",
+   "incidents": 1511,
+   "naive_minutes_per_incident": 3.654533421575116,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.09936303210343374,
+   "shrunk_minutes_per_incident": 3.5774440399465717,
+   "explanation": "Stable: 1,511 incidents; estimate moved 10% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 15,
+   "naive_rank": 16,
+   "count_rank": 51,
+   "station_label": "North York Centre (Line 1)",
+   "incidents": 652,
+   "naive_minutes_per_incident": 3.6395705521472395,
+   "line_minutes_per_incident": 2.8786977813312014,
+   "shrinkage_weight": 0.20361695572551697,
+   "shrunk_minutes_per_incident": 3.484643954859239,
+   "explanation": "Stable: 652 incidents; estimate moved 20% of the way to the line rate."
+  }
+ ],
+ "ranking_last_36_months_movers": [
+  {
+   "station_label": "Bessarion (Line 4)",
+   "incidents": 240,
+   "naive_rank": 67,
+   "shrunk_rank": 54,
+   "rank_change": 13,
+   "shrinkage_weight": 0.3877219172121045,
+   "explanation": "Rose 13 places: few incidents (240), so it was pulled up toward its line rate (3.12 min)."
+  },
+  {
+   "station_label": "Kennedy (Line 2)",
+   "incidents": 3054,
+   "naive_rank": 56,
+   "shrunk_rank": 62,
+   "rank_change": -6,
+   "shrinkage_weight": 0.056848062545021484,
+   "explanation": "Dropped 6 places: its well-measured rate (3,054 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+  },
+  {
+   "station_label": "Bayview (Line 4)",
+   "incidents": 413,
+   "naive_rank": 52,
+   "shrunk_rank": 48,
+   "rank_change": 4,
+   "shrinkage_weight": 0.2689990604650345,
+   "explanation": "Rose 4 places: few incidents (413), so it was pulled up toward its line rate (3.12 min)."
+  },
+  {
+   "station_label": "Leslie (Line 4)",
+   "incidents": 391,
+   "naive_rank": 50,
+   "shrunk_rank": 46,
+   "rank_change": 4,
+   "shrinkage_weight": 0.2798981597143229,
+   "explanation": "Rose 4 places: few incidents (391), so it was pulled up toward its line rate (3.12 min)."
+  },
+  {
+   "station_label": "Union (Line 1)",
+   "incidents": 1842,
+   "naive_rank": 57,
+   "shrunk_rank": 61,
+   "rank_change": -4,
+   "shrinkage_weight": 0.08298968669560824,
+   "explanation": "Dropped 4 places: its well-measured rate (1,842 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+  },
+  {
+   "station_label": "Chester (Line 2)",
+   "incidents": 518,
+   "naive_rank": 41,
+   "shrunk_rank": 44,
+   "rank_change": -3,
+   "shrinkage_weight": 0.2621907542649537,
+   "explanation": "Dropped 3 places: only 518 incidents, so 26% of its gap to the line rate (2.61 min) is treated as noise."
+  },
+  {
+   "station_label": "Don Mills (Line 4)",
+   "incidents": 848,
+   "naive_rank": 24,
+   "shrunk_rank": 21,
+   "rank_change": 3,
+   "shrinkage_weight": 0.15198198301931068,
+   "explanation": "Rose 3 places: 848 incidents make its rate reliable, while small-sample stations ranked above it were pulled toward their line rates."
+  },
+  {
+   "station_label": "Kipling (Line 2)",
+   "incidents": 2879,
+   "naive_rank": 49,
+   "shrunk_rank": 52,
+   "rank_change": -3,
+   "shrinkage_weight": 0.06009590976243228,
+   "explanation": "Dropped 3 places: its well-measured rate (2,879 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+  },
+  {
+   "station_label": "Lansdowne (Line 2)",
+   "incidents": 530,
+   "naive_rank": 40,
+   "shrunk_rank": 43,
+   "rank_change": -3,
+   "shrinkage_weight": 0.25778467131730853,
+   "explanation": "Dropped 3 places: only 530 incidents, so 26% of its gap to the line rate (2.61 min) is treated as noise."
+  },
+  {
+   "station_label": "St George (Line 1)",
+   "incidents": 1314,
+   "naive_rank": 36,
+   "shrunk_rank": 33,
+   "rank_change": 3,
+   "shrinkage_weight": 0.11258279125602788,
+   "explanation": "Rose 3 places: 1,314 incidents make its rate reliable, while small-sample stations ranked above it were pulled toward their line rates."
+  }
+ ],
+ "ranking_last_12_months_top15": [
+  {
+   "shrunk_rank": 1,
+   "naive_rank": 1,
+   "count_rank": 71,
+   "station_label": "Glencairn (Line 1)",
+   "incidents": 151,
+   "naive_minutes_per_incident": 8.80794701986755,
+   "line_minutes_per_incident": 2.5096258626952417,
+   "shrinkage_weight": 0.34644247737671374,
+   "shrunk_minutes_per_incident": 6.625941034862605,
+   "explanation": "Stable: 151 incidents; estimate moved 35% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 2,
+   "naive_rank": 2,
+   "count_rank": 33,
+   "station_label": "Woodbine (Line 2)",
+   "incidents": 326,
+   "naive_minutes_per_incident": 6.932515337423313,
+   "line_minutes_per_incident": 2.7930563848844154,
+   "shrinkage_weight": 0.38635416928247984,
+   "shrunk_minutes_per_incident": 5.333218112536223,
+   "explanation": "Stable: 326 incidents; estimate moved 39% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 3,
+   "naive_rank": 3,
+   "count_rank": 56,
+   "station_label": "Yorkdale (Line 1)",
+   "incidents": 201,
+   "naive_minutes_per_incident": 4.930348258706467,
+   "line_minutes_per_incident": 2.5096258626952417,
+   "shrinkage_weight": 0.28480737683686635,
+   "shrunk_minutes_per_incident": 4.2409086630482555,
+   "explanation": "Stable: 201 incidents; estimate moved 28% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 4,
+   "naive_rank": 6,
+   "count_rank": 30,
+   "station_label": "St Clair West (Line 1)",
+   "incidents": 343,
+   "naive_minutes_per_incident": 4.317784256559767,
+   "line_minutes_per_incident": 2.5096258626952417,
+   "shrinkage_weight": 0.189208036999399,
+   "shrunk_minutes_per_incident": 3.975666156272674,
+   "explanation": "Stable: 343 incidents; estimate moved 19% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 5,
+   "naive_rank": 4,
+   "count_rank": 14,
+   "station_label": "Victoria Park (Line 2)",
+   "incidents": 477,
+   "naive_minutes_per_incident": 4.469601677148847,
+   "line_minutes_per_incident": 2.7930563848844154,
+   "shrinkage_weight": 0.3008438891114329,
+   "shrunk_minutes_per_incident": 3.965223271152552,
+   "explanation": "Stable: 477 incidents; estimate moved 30% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 6,
+   "naive_rank": 7,
+   "count_rank": 43,
+   "station_label": "Lawrence (Line 1)",
+   "incidents": 258,
+   "naive_minutes_per_incident": 4.248062015503876,
+   "line_minutes_per_incident": 2.5096258626952417,
+   "shrinkage_weight": 0.2367838637090118,
+   "shrunk_minutes_per_incident": 3.836428386430418,
+   "explanation": "Stable: 258 incidents; estimate moved 24% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 7,
+   "naive_rank": 8,
+   "count_rank": 62,
+   "station_label": "Museum (Line 1)",
+   "incidents": 168,
+   "naive_minutes_per_incident": 4.244047619047619,
+   "line_minutes_per_incident": 2.5096258626952417,
+   "shrinkage_weight": 0.32269853723535696,
+   "shrunk_minutes_per_incident": 3.6843522553235273,
+   "explanation": "Stable: 168 incidents; estimate moved 32% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 8,
+   "naive_rank": 9,
+   "count_rank": 36,
+   "station_label": "Donlands (Line 2)",
+   "incidents": 301,
+   "naive_minutes_per_incident": 4.232558139534884,
+   "line_minutes_per_incident": 2.7930563848844154,
+   "shrinkage_weight": 0.4054333474493625,
+   "shrunk_minutes_per_incident": 3.6489361244877134,
+   "explanation": "Stable: 301 incidents; estimate moved 41% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 9,
+   "naive_rank": 5,
+   "count_rank": 52,
+   "station_label": "Old Mill (Line 2)",
+   "incidents": 211,
+   "naive_minutes_per_incident": 4.454976303317536,
+   "line_minutes_per_incident": 2.7930563848844154,
+   "shrinkage_weight": 0.49309438785485404,
+   "shrunk_minutes_per_incident": 3.6354929184739673,
+   "explanation": "Dropped 4 places: only 211 incidents, so 49% of its gap to the line rate (2.79 min) is treated as noise."
+  },
+  {
+   "shrunk_rank": 10,
+   "naive_rank": 14,
+   "count_rank": 31,
+   "station_label": "Sheppard-Yonge (Line 4)",
+   "incidents": 337,
+   "naive_minutes_per_incident": 3.8130563798219583,
+   "line_minutes_per_incident": 2.922222222222222,
+   "shrinkage_weight": 0.2577044965472994,
+   "shrunk_minutes_per_incident": 3.5834844117305806,
+   "explanation": "Rose 4 places: few incidents (337), so it was pulled down toward its line rate (2.92 min)."
+  },
+  {
+   "shrunk_rank": 11,
+   "naive_rank": 10,
+   "count_rank": 67,
+   "station_label": "Summerhill (Line 1)",
+   "incidents": 161,
+   "naive_minutes_per_incident": 4.099378881987578,
+   "line_minutes_per_incident": 2.5096258626952417,
+   "shrinkage_weight": 0.33206984523183836,
+   "shrunk_minutes_per_incident": 3.571469842914324,
+   "explanation": "Stable: 161 incidents; estimate moved 33% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 12,
+   "naive_rank": 13,
+   "count_rank": 49,
+   "station_label": "North York Centre (Line 1)",
+   "incidents": 229,
+   "naive_minutes_per_incident": 3.8602620087336246,
+   "line_minutes_per_incident": 2.5096258626952417,
+   "shrinkage_weight": 0.2590031934838802,
+   "shrunk_minutes_per_incident": 3.5104429336749234,
+   "explanation": "Stable: 229 incidents; estimate moved 26% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 13,
+   "naive_rank": 11,
+   "count_rank": 47,
+   "station_label": "Christie (Line 2)",
+   "incidents": 240,
+   "naive_minutes_per_incident": 4.083333333333333,
+   "line_minutes_per_incident": 2.7930563848844154,
+   "shrinkage_weight": 0.46097826634610684,
+   "shrunk_minutes_per_incident": 3.488543702531006,
+   "explanation": "Stable: 240 incidents; estimate moved 46% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 14,
+   "naive_rank": 15,
+   "count_rank": 41,
+   "station_label": "Rosedale (Line 1)",
+   "incidents": 269,
+   "naive_minutes_per_incident": 3.7620817843866172,
+   "line_minutes_per_incident": 2.5096258626952417,
+   "shrinkage_weight": 0.2293216849722113,
+   "shrunk_minutes_per_incident": 3.474866482070927,
+   "explanation": "Stable: 269 incidents; estimate moved 23% of the way to the line rate."
+  },
+  {
+   "shrunk_rank": 15,
+   "naive_rank": 12,
+   "count_rank": 55,
+   "station_label": "Castle Frank (Line 2)",
+   "incidents": 201,
+   "naive_minutes_per_incident": 3.9950248756218905,
+   "line_minutes_per_incident": 2.7930563848844154,
+   "shrinkage_weight": 0.5052320640978336,
+   "shrunk_minutes_per_incident": 3.387751854066038,
+   "explanation": "Dropped 3 places: only 201 incidents, so 51% of its gap to the line rate (2.79 min) is treated as noise."
+  }
+ ],
+ "ranking_last_12_months_movers": [
+  {
+   "station_label": "Bessarion (Line 4)",
+   "incidents": 93,
+   "naive_rank": 63,
+   "shrunk_rank": 51,
+   "rank_change": 12,
+   "shrinkage_weight": 0.5571367246199039,
+   "explanation": "Rose 12 places: few incidents (93), so it was pulled up toward its line rate (2.92 min)."
+  },
+  {
+   "station_label": "Runnymede (Line 2)",
+   "incidents": 161,
+   "naive_rank": 62,
+   "shrunk_rank": 52,
+   "rank_change": 10,
+   "shrinkage_weight": 0.5604108324188459,
+   "explanation": "Rose 10 places: few incidents (161), so it was pulled up toward its line rate (2.79 min)."
+  },
+  {
+   "station_label": "Dufferin (Line 2)",
+   "incidents": 242,
+   "naive_rank": 69,
+   "shrunk_rank": 60,
+   "rank_change": 9,
+   "shrinkage_weight": 0.45891688157021504,
+   "explanation": "Rose 9 places: few incidents (242), so it was pulled up toward its line rate (2.79 min)."
+  },
+  {
+   "station_label": "Bayview (Line 4)",
+   "incidents": 155,
+   "naive_rank": 55,
+   "shrunk_rank": 47,
+   "rank_change": 8,
+   "shrinkage_weight": 0.43014096643849575,
+   "explanation": "Rose 8 places: few incidents (155), so it was pulled up toward its line rate (2.92 min)."
+  },
+  {
+   "station_label": "Leslie (Line 4)",
+   "incidents": 107,
+   "naive_rank": 35,
+   "shrunk_rank": 29,
+   "rank_change": 6,
+   "shrinkage_weight": 0.5223152272793283,
+   "explanation": "Rose 6 places: few incidents (107), so it was pulled up toward its line rate (2.92 min)."
+  },
+  {
+   "station_label": "Queen (Line 1)",
+   "incidents": 316,
+   "naive_rank": 51,
+   "shrunk_rank": 57,
+   "rank_change": -6,
+   "shrinkage_weight": 0.20210717886464952,
+   "explanation": "Dropped 6 places: its well-measured rate (316 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+  },
+  {
+   "station_label": "Bathurst (Line 2)",
+   "incidents": 351,
+   "naive_rank": 71,
+   "shrunk_rank": 66,
+   "rank_change": 5,
+   "shrinkage_weight": 0.3689899701447565,
+   "explanation": "Rose 5 places: few incidents (351), so it was pulled up toward its line rate (2.79 min)."
+  },
+  {
+   "station_label": "Highway 407 (Line 1)",
+   "incidents": 160,
+   "naive_rank": 33,
+   "shrunk_rank": 38,
+   "rank_change": -5,
+   "shrinkage_weight": 0.3334532207682088,
+   "explanation": "Dropped 5 places: only 160 incidents, so 33% of its gap to the line rate (2.51 min) is treated as noise."
+  },
+  {
+   "station_label": "Lansdowne (Line 2)",
+   "incidents": 164,
+   "naive_rank": 16,
+   "shrunk_rank": 21,
+   "rank_change": -5,
+   "shrinkage_weight": 0.5558577446561084,
+   "explanation": "Dropped 5 places: only 164 incidents, so 56% of its gap to the line rate (2.79 min) is treated as noise."
+  },
+  {
+   "station_label": "St George (Line 1)",
+   "incidents": 489,
+   "naive_rank": 50,
+   "shrunk_rank": 55,
+   "rank_change": -5,
+   "shrinkage_weight": 0.14066273324691236,
+   "explanation": "Dropped 5 places: its well-measured rate (489 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+  },
+  {
+   "station_label": "York University (Line 1)",
+   "incidents": 90,
+   "naive_rank": 26,
+   "shrunk_rank": 31,
+   "rank_change": -5,
+   "shrinkage_weight": 0.4707226320166861,
+   "explanation": "Dropped 5 places: only 90 incidents, so 47% of its gap to the line rate (2.51 min) is treated as noise."
+  },
+  {
+   "station_label": "Cedarvale (Eglinton West) (Line 1)",
+   "incidents": 364,
+   "naive_rank": 58,
+   "shrunk_rank": 62,
+   "rank_change": -4,
+   "shrinkage_weight": 0.18025987819382625,
+   "explanation": "Dropped 4 places: its well-measured rate (364 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+  }
+ ],
+ "ranking_periods": [
+  {
+   "period": "All years",
+   "period_start": "2014-01-01 00:00:00",
+   "period_end": "2026-08-31 00:00:00",
+   "stations": 80,
+   "min_incidents": 449,
+   "max_incidents": 10736,
+   "between_variance": 0.18675579860457886,
+   "mean_abs_rank_change": 1.15,
+   "max_abs_rank_change": 6,
+   "corr_naive_vs_count_rank": -0.4882794186591656
+  },
+  {
+   "period": "Last 36 months",
+   "period_start": "2023-09-01 00:00:00",
+   "period_end": "2026-08-31 00:00:00",
+   "stations": 76,
+   "min_incidents": 1,
+   "max_incidents": 3289,
+   "between_variance": 0.6261147170079608,
+   "mean_abs_rank_change": 1.394736842105263,
+   "max_abs_rank_change": 13,
+   "corr_naive_vs_count_rank": -0.17008885850991062
+  },
+  {
+   "period": "Last 12 months",
+   "period_start": "2025-09-01 00:00:00",
+   "period_end": "2026-08-31 00:00:00",
+   "stations": 75,
+   "min_incidents": 8,
+   "max_incidents": 1253,
+   "between_variance": 1.034152324052309,
+   "mean_abs_rank_change": 2.4266666666666667,
+   "max_abs_rank_change": 12,
+   "corr_naive_vs_count_rank": -0.21780938833570423
+  }
+ ],
+ "meta": [
+  {
+   "first_date": "2014-01-01",
+   "last_date": "2026-08-31",
+   "last_full_year": 2025,
+   "incidents": 267573,
+   "delay_minutes": 682828
+  }
+ ]
+}

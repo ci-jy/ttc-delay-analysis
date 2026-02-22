@@ -1,0 +1,278 @@
+[
+  {
+    "name": "Row counts per year reconcile with the source files",
+    "status": "pass",
+    "detail": "267,842 source rows = 267,573 loaded + 269 removed; 0 year(s) do not reconcile",
+    "data": [
+      {
+        "year": 2014,
+        "source_rows": 20424,
+        "removed_rows": 11,
+        "loaded_rows": 20413
+      },
+      {
+        "year": 2015,
+        "source_rows": 21474,
+        "removed_rows": 7,
+        "loaded_rows": 21467
+      },
+      {
+        "year": 2016,
+        "source_rows": 21162,
+        "removed_rows": 5,
+        "loaded_rows": 21157
+      },
+      {
+        "year": 2017,
+        "source_rows": 18885,
+        "removed_rows": 6,
+        "loaded_rows": 18879
+      },
+      {
+        "year": 2018,
+        "source_rows": 20737,
+        "removed_rows": 13,
+        "loaded_rows": 20724
+      },
+      {
+        "year": 2019,
+        "source_rows": 19222,
+        "removed_rows": 79,
+        "loaded_rows": 19143
+      },
+      {
+        "year": 2020,
+        "source_rows": 14782,
+        "removed_rows": 23,
+        "loaded_rows": 14759
+      },
+      {
+        "year": 2021,
+        "source_rows": 16370,
+        "removed_rows": 22,
+        "loaded_rows": 16348
+      },
+      {
+        "year": 2022,
+        "source_rows": 19895,
+        "removed_rows": 14,
+        "loaded_rows": 19881
+      },
+      {
+        "year": 2023,
+        "source_rows": 22949,
+        "removed_rows": 6,
+        "loaded_rows": 22943
+      },
+      {
+        "year": 2024,
+        "source_rows": 26467,
+        "removed_rows": 17,
+        "loaded_rows": 26450
+      },
+      {
+        "year": 2025,
+        "source_rows": 25737,
+        "removed_rows": 57,
+        "loaded_rows": 25680
+      },
+      {
+        "year": 2026,
+        "source_rows": 19738,
+        "removed_rows": 9,
+        "loaded_rows": 19729
+      }
+    ]
+  },
+  {
+    "name": "CSV rows match the CKAN datastore record count",
+    "status": "pass",
+    "detail": "ttc-subway-delay-data-since-2025.csv: read 45,475, CKAN datastore reports 45,475",
+    "data": [
+      {
+        "file": "ttc-subway-delay-data-since-2025.csv",
+        "rows_read": 45475,
+        "datastore_rows": 45475
+      }
+    ]
+  },
+  {
+    "name": "No orphan foreign keys in fact_delay",
+    "status": "pass",
+    "detail": "0 fact rows with a key missing from its dimension",
+    "data": {
+      "date_key": 0,
+      "station_key": 0,
+      "line_key": 0,
+      "cause_key": 0
+    }
+  },
+  {
+    "name": "Delay and gap minutes are present and non-negative",
+    "status": "pass",
+    "detail": "0 rows with null or negative minutes",
+    "data": []
+  },
+  {
+    "name": "Exact duplicates removed",
+    "status": "pass",
+    "detail": "269 exact duplicate rows removed; 0 remain",
+    "data": {
+      "removed": 269,
+      "remaining": 0
+    }
+  },
+  {
+    "name": "Dates fall inside each file's stated period",
+    "status": "pass",
+    "detail": "0 rows dated outside their file's period",
+    "data": []
+  },
+  {
+    "name": "Station names resolved",
+    "status": "pass",
+    "detail": "267 rows (0.10%) have a location that could not be matched; see station_unmatched.csv",
+    "data": [
+      {
+        "location_type": "station",
+        "rows": 249268
+      },
+      {
+        "location_type": "line_wide",
+        "rows": 12704
+      },
+      {
+        "location_type": "facility",
+        "rows": 3258
+      },
+      {
+        "location_type": "segment",
+        "rows": 2076
+      },
+      {
+        "location_type": "unmatched",
+        "rows": 267
+      }
+    ]
+  },
+  {
+    "name": "Cause codes have a published description",
+    "status": "pass",
+    "detail": "1,635 rows (0.61%) carry a code missing from both code lists",
+    "data": [
+      {
+        "description_source": "current code list",
+        "rows": 257825,
+        "codes": 136
+      },
+      {
+        "description_source": "legacy code list",
+        "rows": 8113,
+        "codes": 71
+      },
+      {
+        "description_source": "undocumented",
+        "rows": 1634,
+        "codes": 27
+      },
+      {
+        "description_source": "not recorded",
+        "rows": 1,
+        "codes": 1
+      }
+    ]
+  },
+  {
+    "name": "Delays over 600 minutes (kept, listed for review)",
+    "status": "warn",
+    "detail": "10 incidents",
+    "data": [
+      {
+        "date": "2015-02-17",
+        "time_of_day": "06:56",
+        "raw_station": "MCCOWAN STATION TO KEN",
+        "cause_code": "ERHV",
+        "min_delay": 999,
+        "min_gap": 999
+      },
+      {
+        "date": "2025-02-16",
+        "time_of_day": "11:03",
+        "raw_station": "SHEPPARD WEST STATION",
+        "cause_code": "MUWEA",
+        "min_delay": 900,
+        "min_gap": 906
+      },
+      {
+        "date": "2026-01-26",
+        "time_of_day": "05:50",
+        "raw_station": "WOODBINE STATION - KEN",
+        "cause_code": "PUTIS",
+        "min_delay": 827,
+        "min_gap": 0
+      },
+      {
+        "date": "2025-02-16",
+        "time_of_day": "09:18",
+        "raw_station": "EGLINTON STATION",
+        "cause_code": "MUWEA",
+        "min_delay": 807,
+        "min_gap": 812
+      },
+      {
+        "date": "2014-02-05",
+        "time_of_day": "12:35",
+        "raw_station": "MCCOWAN STATION",
+        "cause_code": "MRWEA",
+        "min_delay": 788,
+        "min_gap": 0
+      },
+      {
+        "date": "2024-05-13",
+        "time_of_day": "07:01",
+        "raw_station": "BROADVIEW AND ST GEORG",
+        "cause_code": "EUCD",
+        "min_delay": 716,
+        "min_gap": 719
+      },
+      {
+        "date": "2026-01-26",
+        "time_of_day": "05:54",
+        "raw_station": "ST CLAIR & BLOOR",
+        "cause_code": "MUWEA",
+        "min_delay": 708,
+        "min_gap": 0
+      },
+      {
+        "date": "2026-01-25",
+        "time_of_day": "15:21",
+        "raw_station": "VICTORIA PARK STATION",
+        "cause_code": "PUTIS",
+        "min_delay": 661,
+        "min_gap": 665
+      },
+      {
+        "date": "2024-04-25",
+        "time_of_day": "15:36",
+        "raw_station": "ISLINGTON TO KIPLING",
+        "cause_code": "MUPLB",
+        "min_delay": 640,
+        "min_gap": 645
+      },
+      {
+        "date": "2026-01-25",
+        "time_of_day": "16:12",
+        "raw_station": "GLENCAIRN STATION",
+        "cause_code": "PUTIS",
+        "min_delay": 622,
+        "min_gap": 626
+      }
+    ]
+  },
+  {
+    "name": "Every month in the date range has incidents",
+    "status": "pass",
+    "detail": "0 month(s) without data",
+    "data": []
+  }
+]

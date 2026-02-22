@@ -30,8 +30,8 @@ class StarSchema:
     dim_line: pd.DataFrame
     dim_station: pd.DataFrame
     dim_cause: pd.DataFrame
-    source_counts: pd.DataFrame  # rows read per source year
-    removed: pd.DataFrame  # rows removed per year and reason
+    source_counts: pd.DataFrame  # rows read per source file and year
+    removed: pd.DataFrame  # rows removed per source file, year and reason
     station_matches: pd.DataFrame  # one row per distinct (raw station, line)
     notes: dict = field(default_factory=dict)
 
@@ -144,7 +144,7 @@ def transform(raw: pd.DataFrame, raw_dir: Path, reference_dir: Path = REFERENCE_
     raw["source_year"] = raw["date"].dt.year
     source_counts = (
         raw.assign(source_year=raw["source_year"].astype("Int64"))
-        .groupby(["source_year"], dropna=False)
+        .groupby(["source_file", "source_year"], dropna=False)
         .size()
         .reset_index(name="source_rows")
     )
@@ -162,9 +162,14 @@ def transform(raw: pd.DataFrame, raw_dir: Path, reference_dir: Path = REFERENCE_
         removed.append(raw.loc[dup].assign(reason="exact duplicate"))
     raw = raw.loc[~dup].reset_index(drop=True)
     removed_df = (
-        pd.concat(removed).groupby(["source_year", "reason"], dropna=False).size().reset_index(name="rows")
+        pd.concat(removed)
+        .assign(source_year=lambda d: d["source_year"].astype("Int64"))
+        .groupby(["source_file", "source_year", "reason"], dropna=False)
+        .size()
+        .reset_index(name="rows")
         if removed
-        else pd.DataFrame(columns=["source_year", "reason", "rows"])
+        else pd.DataFrame({"source_file": pd.Series(dtype=str), "source_year": pd.Series(dtype="Int64"),
+                           "reason": pd.Series(dtype=str), "rows": pd.Series(dtype=int)})
     )
 
     raw["line_code"] = raw["line"].map(normalise_line)
