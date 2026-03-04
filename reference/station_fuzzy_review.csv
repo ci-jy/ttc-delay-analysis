@@ -40,5 +40,5 @@ WELLSLEY,YU_WELLESLEY,accept,typo
 WILSO,YU_WILSON,accept,truncated
 YORK UNIVERISTY,YU_YORK_UNIVERSITY,accept,typo
 YORKDLAE,YU_YORKDALE,accept,typo
-QUEEN ALBERT,YU_QUEEN,reject,unclear location; not Queen station
 OSSINGTION,BD_OSSINGTON,accept,typo
+LAWRENCE E,YU_LAWRENCE,reject,"truncated; could be Lawrence East (Line 3) or Lawrence East bus, not Lawrence (Line 1)"
