@@ -80,7 +80,7 @@ SELECT
     d.date, d.year, d.month, d.month_start, d.year_month,
     l.line_code, l.is_subway_line,
     s.station_key, s.station_code, s.station_name, s.station_label,
-    s.line_code AS station_line_code, s.location_type, s.is_station,
+    s.line_code AS station_line_code, s.location_type, s.is_station, s.closed AS station_closed,
     c.cause_code, c.cause_description, c.cause_category, c.cause_label,
     f.hour, f.min_delay, f.min_gap
 FROM fact_delay f

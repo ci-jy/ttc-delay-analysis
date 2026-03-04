@@ -1335,9 +1335,9 @@
    "incidents": 1446,
    "naive_minutes_per_incident": 7.799446749654218,
    "line_minutes_per_incident": 6.598661661498286,
-   "shrinkage_weight": 0.6565167744322112,
+   "shrinkage_weight": 0.6565167744322111,
    "shrunk_minutes_per_incident": 7.011111196791788,
-   "explanation": "Stable: 1,446 incidents; estimate moved 66% of the way to the line rate."
+   "explanation": "Stable: 1,446 incidents; estimate moved 66% of the way to its line rate (6.60 min)."
   },
   {
    "shrunk_rank": 2,
@@ -1347,9 +1347,9 @@
    "incidents": 1904,
    "naive_minutes_per_incident": 7.011029411764706,
    "line_minutes_per_incident": 6.598661661498286,
-   "shrinkage_weight": 0.5921001599496342,
+   "shrinkage_weight": 0.592100159949634,
    "shrunk_minutes_per_incident": 6.766866400873888,
-   "explanation": "Stable: 1,904 incidents; estimate moved 59% of the way to the line rate."
+   "explanation": "Stable: 1,904 incidents; estimate moved 59% of the way to its line rate (6.60 min)."
   },
   {
    "shrunk_rank": 3,
@@ -1359,9 +1359,9 @@
    "incidents": 788,
    "naive_minutes_per_incident": 6.722081218274112,
    "line_minutes_per_incident": 6.598661661498286,
-   "shrinkage_weight": 0.7781414461365417,
-   "shrunk_minutes_per_incident": 6.626043345883041,
-   "explanation": "Stable: 788 incidents; estimate moved 78% of the way to the line rate."
+   "shrinkage_weight": 0.7781414461365415,
+   "shrunk_minutes_per_incident": 6.62604334588304,
+   "explanation": "Stable: 788 incidents; estimate moved 78% of the way to its line rate (6.60 min)."
   },
   {
    "shrunk_rank": 4,
@@ -1371,9 +1371,9 @@
    "incidents": 449,
    "naive_minutes_per_incident": 6.443207126948775,
    "line_minutes_per_incident": 6.598661661498286,
-   "shrinkage_weight": 0.8602470606507402,
+   "shrinkage_weight": 0.8602470606507401,
    "shrunk_minutes_per_incident": 6.576936433359821,
-   "explanation": "Stable: 449 incidents; estimate moved 86% of the way to the line rate."
+   "explanation": "Stable: 449 incidents; estimate moved 86% of the way to its line rate (6.60 min)."
   },
   {
    "shrunk_rank": 5,
@@ -1385,7 +1385,7 @@
    "line_minutes_per_incident": 6.598661661498286,
    "shrinkage_weight": 0.8468049284280974,
    "shrunk_minutes_per_incident": 6.483051214252486,
-   "explanation": "Stable: 500 incidents; estimate moved 85% of the way to the line rate."
+   "explanation": "Stable: 500 incidents; estimate moved 85% of the way to its line rate (6.60 min)."
   },
   {
    "shrunk_rank": 6,
@@ -1397,7 +1397,7 @@
    "line_minutes_per_incident": 6.598661661498286,
    "shrinkage_weight": 0.7265901036598089,
    "shrunk_minutes_per_incident": 6.027758629616966,
-   "explanation": "Stable: 1,040 incidents; estimate moved 73% of the way to the line rate."
+   "explanation": "Stable: 1,040 incidents; estimate moved 73% of the way to its line rate (6.60 min)."
   },
   {
    "shrunk_rank": 7,
@@ -1409,7 +1409,7 @@
    "line_minutes_per_incident": 2.6746092460320656,
    "shrinkage_weight": 0.18533325363713593,
    "shrunk_minutes_per_incident": 3.6794701299869104,
-   "explanation": "Stable: 1,784 incidents; estimate moved 19% of the way to the line rate."
+   "explanation": "Stable: 1,784 incidents; estimate moved 19% of the way to its line rate (2.67 min)."
   },
   {
    "shrunk_rank": 8,
@@ -1419,9 +1419,9 @@
    "incidents": 1747,
    "naive_minutes_per_incident": 3.974813966800229,
    "line_minutes_per_incident": 2.4036535169198268,
-   "shrinkage_weight": 0.19939862335578606,
+   "shrinkage_weight": 0.19939862335578604,
    "shrunk_minutes_per_incident": 3.6615267360230193,
-   "explanation": "Stable: 1,747 incidents; estimate moved 20% of the way to the line rate."
+   "explanation": "Stable: 1,747 incidents; estimate moved 20% of the way to its line rate (2.40 min)."
   },
   {
    "shrunk_rank": 9,
@@ -1433,7 +1433,7 @@
    "line_minutes_per_incident": 2.6746092460320656,
    "shrinkage_weight": 0.27934872266918653,
    "shrunk_minutes_per_incident": 3.4824573452027354,
-   "explanation": "Stable: 1,047 incidents; estimate moved 28% of the way to the line rate."
+   "explanation": "Stable: 1,047 incidents; estimate moved 28% of the way to its line rate (2.67 min)."
   },
   {
    "shrunk_rank": 10,
@@ -1443,9 +1443,9 @@
    "incidents": 1699,
    "naive_minutes_per_incident": 3.6215420835785754,
    "line_minutes_per_incident": 2.6746092460320656,
-   "shrinkage_weight": 0.19281754370589588,
+   "shrinkage_weight": 0.19281754370589585,
    "shrunk_minutes_per_incident": 3.4389568197884035,
-   "explanation": "Stable: 1,699 incidents; estimate moved 19% of the way to the line rate."
+   "explanation": "Stable: 1,699 incidents; estimate moved 19% of the way to its line rate (2.67 min)."
   },
   {
    "shrunk_rank": 11,
@@ -1455,9 +1455,9 @@
    "incidents": 2592,
    "naive_minutes_per_incident": 3.5536265432098766,
    "line_minutes_per_incident": 2.6746092460320656,
-   "shrinkage_weight": 0.13538107299285562,
+   "shrinkage_weight": 0.1353810729928556,
    "shrunk_minutes_per_incident": 3.4346242383386647,
-   "explanation": "Stable: 2,592 incidents; estimate moved 14% of the way to the line rate."
+   "explanation": "Stable: 2,592 incidents; estimate moved 14% of the way to its line rate (2.67 min)."
   },
   {
    "shrunk_rank": 12,
@@ -1467,9 +1467,9 @@
    "incidents": 4067,
    "naive_minutes_per_incident": 3.3137447750184412,
    "line_minutes_per_incident": 2.6746092460320656,
-   "shrinkage_weight": 0.09073683684206413,
+   "shrinkage_weight": 0.09073683684206411,
    "shrunk_minutes_per_incident": 3.255751638804838,
-   "explanation": "Stable: 4,067 incidents; estimate moved 9% of the way to the line rate."
+   "explanation": "Stable: 4,067 incidents; estimate moved 9% of the way to its line rate (2.67 min)."
   },
   {
    "shrunk_rank": 13,
@@ -1479,9 +1479,9 @@
    "incidents": 5318,
    "naive_minutes_per_incident": 3.2367431365174877,
    "line_minutes_per_incident": 2.6746092460320656,
-   "shrinkage_weight": 0.07090547620483435,
+   "shrinkage_weight": 0.07090547620483434,
    "shrunk_minutes_per_incident": 3.1968847653217427,
-   "explanation": "Stable: 5,318 incidents; estimate moved 7% of the way to the line rate."
+   "explanation": "Stable: 5,318 incidents; estimate moved 7% of the way to its line rate (2.67 min)."
   },
   {
    "shrunk_rank": 14,
@@ -1491,9 +1491,9 @@
    "incidents": 892,
    "naive_minutes_per_incident": 3.32847533632287,
    "line_minutes_per_incident": 2.6746092460320656,
-   "shrinkage_weight": 0.31271079769077614,
+   "shrinkage_weight": 0.3127107976907761,
    "shrunk_minutes_per_incident": 3.1240043496450838,
-   "explanation": "Stable: 892 incidents; estimate moved 31% of the way to the line rate."
+   "explanation": "Stable: 892 incidents; estimate moved 31% of the way to its line rate (2.67 min)."
   },
   {
    "shrunk_rank": 15,
@@ -1503,9 +1503,9 @@
    "incidents": 7128,
    "naive_minutes_per_incident": 3.095258136924804,
    "line_minutes_per_incident": 2.6746092460320656,
-   "shrinkage_weight": 0.05387051140233413,
+   "shrinkage_weight": 0.05387051140233412,
    "shrunk_minutes_per_incident": 3.072597566051587,
-   "explanation": "Stable: 7,128 incidents; estimate moved 5% of the way to the line rate."
+   "explanation": "Stable: 7,128 incidents; estimate moved 5% of the way to its line rate (2.67 min)."
   }
  ],
  "ranking_all_years_movers": [
@@ -1515,8 +1515,8 @@
    "naive_rank": 42,
    "shrunk_rank": 36,
    "rank_change": 6,
-   "shrinkage_weight": 0.22681463224678633,
-   "explanation": "Rose 6 places: 1,327 incidents make its rate reliable, while small-sample stations ranked above it were pulled toward their line rates."
+   "shrinkage_weight": 0.22681463224678627,
+   "explanation": "Rose 6 places: shrinkage moved its rate +0.05 min; well measured (1,327 incidents, 23% shrinkage), so it overtook stations whose estimates moved more."
   },
   {
    "station_label": "Pioneer Village (Line 1)",
@@ -1524,8 +1524,8 @@
    "naive_rank": 55,
    "shrunk_rank": 49,
    "rank_change": 6,
-   "shrinkage_weight": 0.29348935645411084,
-   "explanation": "Rose 6 places: few incidents (977), so it was pulled up toward its line rate (2.67 min)."
+   "shrinkage_weight": 0.2934893564541108,
+   "explanation": "Rose 6 places: shrinkage moved its rate +0.05 min; only 977 incidents, so 29% of its gap to the line rate (2.67 min) is treated as noise."
   },
   {
    "station_label": "Chester (Line 2)",
@@ -1534,7 +1534,7 @@
    "shrunk_rank": 53,
    "rank_change": -5,
    "shrinkage_weight": 0.18958120817744648,
-   "explanation": "Dropped 5 places: its well-measured rate (1,860 incidents) was overtaken by stations pulled down less, or pulled toward a higher line rate."
+   "explanation": "Dropped 5 places: shrinkage moved its rate -0.03 min; well measured (1,860 incidents, 19% shrinkage), so it fell behind stations whose estimates moved more."
   },
   {
    "station_label": "Dufferin (Line 2)",
@@ -1542,8 +1542,8 @@
    "naive_rank": 54,
    "shrunk_rank": 58,
    "rank_change": -4,
-   "shrinkage_weight": 0.16259037094810808,
-   "explanation": "Dropped 4 places: its well-measured rate (2,241 incidents) was overtaken by stations pulled down less, or pulled toward a higher line rate."
+   "shrinkage_weight": 0.16259037094810805,
+   "explanation": "Dropped 4 places: shrinkage moved its rate -0.02 min; well measured (2,241 incidents, 16% shrinkage), so it fell behind stations whose estimates moved more."
   },
   {
    "station_label": "Ossington (Line 2)",
@@ -1552,7 +1552,7 @@
    "shrunk_rank": 40,
    "rank_change": -4,
    "shrinkage_weight": 0.12910845827190795,
-   "explanation": "Dropped 4 places: its well-measured rate (2,935 incidents) was overtaken by stations pulled down less, or pulled toward a higher line rate."
+   "explanation": "Dropped 4 places: shrinkage moved its rate -0.04 min; well measured (2,935 incidents, 13% shrinkage), so it fell behind stations whose estimates moved more."
   },
   {
    "station_label": "High Park (Line 2)",
@@ -1560,8 +1560,8 @@
    "naive_rank": 41,
    "shrunk_rank": 44,
    "rank_change": -3,
-   "shrinkage_weight": 0.20217820229833036,
-   "explanation": "Dropped 3 places: its well-measured rate (1,717 incidents) was overtaken by stations pulled down less, or pulled toward a higher line rate."
+   "shrinkage_weight": 0.2021782022983303,
+   "explanation": "Dropped 3 places: shrinkage moved its rate -0.06 min; well measured (1,717 incidents, 20% shrinkage), so it fell behind stations whose estimates moved more."
   },
   {
    "station_label": "Lansdowne (Line 2)",
@@ -1569,8 +1569,8 @@
    "naive_rank": 19,
    "shrunk_rank": 22,
    "rank_change": -3,
-   "shrinkage_weight": 0.2177606519176492,
-   "explanation": "Dropped 3 places: its well-measured rate (1,563 incidents) was overtaken by stations pulled down less, or pulled toward a higher line rate."
+   "shrinkage_weight": 0.21776065191764918,
+   "explanation": "Dropped 3 places: shrinkage moved its rate -0.15 min; well measured (1,563 incidents, 22% shrinkage), so it fell behind stations whose estimates moved more."
   },
   {
    "station_label": "Osgoode (Line 1)",
@@ -1578,8 +1578,8 @@
    "naive_rank": 51,
    "shrunk_rank": 48,
    "rank_change": 3,
-   "shrinkage_weight": 0.19551123644392485,
-   "explanation": "Rose 3 places: 1,670 incidents make its rate reliable, while small-sample stations ranked above it were pulled toward their line rates."
+   "shrinkage_weight": 0.19551123644392482,
+   "explanation": "Rose 3 places: shrinkage moved its rate +0.03 min; well measured (1,670 incidents, 20% shrinkage), so it overtook stations whose estimates moved more."
   },
   {
    "station_label": "Vaughan Metropolitan Centre (Line 1)",
@@ -1587,8 +1587,8 @@
    "naive_rank": 46,
    "shrunk_rank": 43,
    "rank_change": 3,
-   "shrinkage_weight": 0.06898906392985535,
-   "explanation": "Rose 3 places: 5,477 incidents make its rate reliable, while small-sample stations ranked above it were pulled toward their line rates."
+   "shrinkage_weight": 0.06898906392985533,
+   "explanation": "Rose 3 places: shrinkage moved its rate +0.00 min; well measured (5,477 incidents, 7% shrinkage), so it overtook stations whose estimates moved more."
   },
   {
    "station_label": "York University (Line 1)",
@@ -1596,8 +1596,8 @@
    "naive_rank": 29,
    "shrunk_rank": 32,
    "rank_change": -3,
-   "shrinkage_weight": 0.3804204343992925,
-   "explanation": "Dropped 3 places: only 661 incidents, so 38% of its gap to the line rate (2.67 min) is treated as noise."
+   "shrinkage_weight": 0.38042043439929246,
+   "explanation": "Dropped 3 places: shrinkage moved its rate -0.07 min; only 661 incidents, so 38% of its gap to the line rate (2.67 min) is treated as noise."
   }
  ],
  "ranking_last_36_months_top15": [
@@ -1609,9 +1609,9 @@
    "incidents": 617,
    "naive_minutes_per_incident": 5.367909238249595,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.21271046054791926,
-   "shrunk_minutes_per_incident": 4.838427922847326,
-   "explanation": "Stable: 617 incidents; estimate moved 21% of the way to the line rate."
+   "shrinkage_weight": 0.2082786867276095,
+   "shrunk_minutes_per_incident": 4.849459545015312,
+   "explanation": "Stable: 617 incidents; estimate moved 21% of the way to its line rate (2.88 min)."
   },
   {
    "shrunk_rank": 2,
@@ -1621,9 +1621,9 @@
    "incidents": 423,
    "naive_minutes_per_incident": 5.33096926713948,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.28268794699549676,
-   "shrunk_minutes_per_incident": 4.637741675340741,
-   "explanation": "Stable: 423 incidents; estimate moved 28% of the way to the line rate."
+   "shrinkage_weight": 0.27731175604811426,
+   "shrunk_minutes_per_incident": 4.650925555103268,
+   "explanation": "Stable: 423 incidents; estimate moved 28% of the way to its line rate (2.88 min)."
   },
   {
    "shrunk_rank": 3,
@@ -1633,9 +1633,9 @@
    "incidents": 1038,
    "naive_minutes_per_incident": 4.703275529865126,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.13837577828013847,
-   "shrunk_minutes_per_incident": 4.450798163879121,
-   "explanation": "Stable: 1,038 incidents; estimate moved 14% of the way to the line rate."
+   "shrinkage_weight": 0.13522673423577056,
+   "shrunk_minutes_per_incident": 4.456543839571627,
+   "explanation": "Stable: 1,038 incidents; estimate moved 14% of the way to its line rate (2.88 min)."
   },
   {
    "shrunk_rank": 4,
@@ -1645,9 +1645,9 @@
    "incidents": 520,
    "naive_minutes_per_incident": 4.873076923076923,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.2427568699501245,
-   "shrunk_minutes_per_incident": 4.3889276851329155,
-   "explanation": "Stable: 520 incidents; estimate moved 24% of the way to the line rate."
+   "shrinkage_weight": 0.2378882419253247,
+   "shrunk_minutes_per_incident": 4.398637575314495,
+   "explanation": "Stable: 520 incidents; estimate moved 24% of the way to its line rate (2.88 min)."
   },
   {
    "shrunk_rank": 5,
@@ -1657,9 +1657,9 @@
    "incidents": 768,
    "naive_minutes_per_incident": 4.701822916666667,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.17834731976197765,
-   "shrunk_minutes_per_incident": 4.376673435188894,
-   "explanation": "Stable: 768 incidents; estimate moved 18% of the way to the line rate."
+   "shrinkage_weight": 0.1744728313958925,
+   "shrunk_minutes_per_incident": 4.383737112315669,
+   "explanation": "Stable: 768 incidents; estimate moved 17% of the way to its line rate (2.88 min)."
   },
   {
    "shrunk_rank": 6,
@@ -1669,9 +1669,9 @@
    "incidents": 877,
    "naive_minutes_per_incident": 4.657924743443558,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.15972144091777107,
-   "shrunk_minutes_per_incident": 4.373744049335224,
-   "explanation": "Stable: 877 incidents; estimate moved 16% of the way to the line rate."
+   "shrinkage_weight": 0.1561746778563055,
+   "shrunk_minutes_per_incident": 4.380054545802407,
+   "explanation": "Stable: 877 incidents; estimate moved 16% of the way to its line rate (2.88 min)."
   },
   {
    "shrunk_rank": 7,
@@ -1681,9 +1681,9 @@
    "incidents": 872,
    "naive_minutes_per_incident": 4.223623853211009,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.16049029240951881,
-   "shrunk_minutes_per_incident": 4.007776274665834,
-   "explanation": "Stable: 872 incidents; estimate moved 16% of the way to the line rate."
+   "shrinkage_weight": 0.1569296448352508,
+   "shrunk_minutes_per_incident": 4.012565082421242,
+   "explanation": "Stable: 872 incidents; estimate moved 16% of the way to its line rate (2.88 min)."
   },
   {
    "shrunk_rank": 8,
@@ -1693,9 +1693,9 @@
    "incidents": 557,
    "naive_minutes_per_incident": 4.190305206463195,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.2303456699210391,
-   "shrunk_minutes_per_incident": 3.8881821154477567,
-   "explanation": "Stable: 557 incidents; estimate moved 23% of the way to the line rate."
+   "shrinkage_weight": 0.22565178152268867,
+   "shrunk_minutes_per_incident": 3.894338654323775,
+   "explanation": "Stable: 557 incidents; estimate moved 23% of the way to its line rate (2.88 min)."
   },
   {
    "shrunk_rank": 9,
@@ -1705,9 +1705,9 @@
    "incidents": 1160,
    "naive_minutes_per_incident": 3.996551724137931,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.12565110371160487,
-   "shrunk_minutes_per_incident": 3.8560921424358967,
-   "explanation": "Stable: 1,160 incidents; estimate moved 13% of the way to the line rate."
+   "shrinkage_weight": 0.12275038311708064,
+   "shrunk_minutes_per_incident": 3.859334724389466,
+   "explanation": "Stable: 1,160 incidents; estimate moved 12% of the way to its line rate (2.88 min)."
   },
   {
    "shrunk_rank": 10,
@@ -1717,9 +1717,9 @@
    "incidents": 599,
    "naive_minutes_per_incident": 4.176961602671119,
    "line_minutes_per_incident": 2.6081385439493547,
-   "shrinkage_weight": 0.2350702913623536,
-   "shrunk_minutes_per_incident": 3.808177909161415,
-   "explanation": "Stable: 599 incidents; estimate moved 24% of the way to the line rate."
+   "shrinkage_weight": 0.23030893602902053,
+   "shrunk_minutes_per_incident": 3.8156476331991156,
+   "explanation": "Stable: 599 incidents; estimate moved 23% of the way to its line rate (2.61 min)."
   },
   {
    "shrunk_rank": 11,
@@ -1729,9 +1729,9 @@
    "incidents": 905,
    "naive_minutes_per_incident": 3.876243093922652,
    "line_minutes_per_incident": 3.1186986056489094,
-   "shrinkage_weight": 0.14378600651626444,
-   "shrunk_minutes_per_incident": 3.767318797195364,
-   "explanation": "Stable: 905 incidents; estimate moved 14% of the way to the line rate."
+   "shrinkage_weight": 0.14053392243655274,
+   "shrunk_minutes_per_incident": 3.7697823955653518,
+   "explanation": "Stable: 905 incidents; estimate moved 14% of the way to its line rate (3.12 min)."
   },
   {
    "shrunk_rank": 12,
@@ -1741,9 +1741,9 @@
    "incidents": 580,
    "naive_minutes_per_incident": 4.068965517241379,
    "line_minutes_per_incident": 2.6081385439493547,
-   "shrinkage_weight": 0.24091567976613534,
-   "shrunk_minutes_per_incident": 3.7170293939500247,
-   "explanation": "Stable: 580 incidents; estimate moved 24% of the way to the line rate."
+   "shrinkage_weight": 0.23607246605210577,
+   "shrunk_minutes_per_incident": 3.7241044911808974,
+   "explanation": "Stable: 580 incidents; estimate moved 24% of the way to its line rate (2.61 min)."
   },
   {
    "shrunk_rank": 13,
@@ -1753,9 +1753,9 @@
    "incidents": 904,
    "naive_minutes_per_incident": 3.827433628318584,
    "line_minutes_per_incident": 2.6081385439493547,
-   "shrinkage_weight": 0.1691775826768311,
-   "shrunk_minutes_per_incident": 3.6211562333752547,
-   "explanation": "Stable: 904 incidents; estimate moved 17% of the way to the line rate."
+   "shrinkage_weight": 0.16546218556899317,
+   "shrunk_minutes_per_incident": 3.6256863988053216,
+   "explanation": "Stable: 904 incidents; estimate moved 17% of the way to its line rate (2.61 min)."
   },
   {
    "shrunk_rank": 14,
@@ -1765,9 +1765,9 @@
    "incidents": 1511,
    "naive_minutes_per_incident": 3.654533421575116,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.09936303210343374,
-   "shrunk_minutes_per_incident": 3.5774440399465717,
-   "explanation": "Stable: 1,511 incidents; estimate moved 10% of the way to the line rate."
+   "shrinkage_weight": 0.097001857539786,
+   "shrunk_minutes_per_incident": 3.5792759233258873,
+   "explanation": "Stable: 1,511 incidents; estimate moved 10% of the way to its line rate (2.88 min)."
   },
   {
    "shrunk_rank": 15,
@@ -1777,9 +1777,9 @@
    "incidents": 652,
    "naive_minutes_per_incident": 3.6395705521472395,
    "line_minutes_per_incident": 2.8786977813312014,
-   "shrinkage_weight": 0.20361695572551697,
-   "shrunk_minutes_per_incident": 3.484643954859239,
-   "explanation": "Stable: 652 incidents; estimate moved 20% of the way to the line rate."
+   "shrinkage_weight": 0.19932667506885632,
+   "shrunk_minutes_per_incident": 3.4879083125900507,
+   "explanation": "Stable: 652 incidents; estimate moved 20% of the way to its line rate (2.88 min)."
   }
  ],
  "ranking_last_36_months_movers": [
@@ -1789,8 +1789,8 @@
    "naive_rank": 67,
    "shrunk_rank": 54,
    "rank_change": 13,
-   "shrinkage_weight": 0.3877219172121045,
-   "explanation": "Rose 13 places: few incidents (240), so it was pulled up toward its line rate (3.12 min)."
+   "shrinkage_weight": 0.38141031780291834,
+   "explanation": "Rose 13 places: shrinkage moved its rate +0.43 min; only 240 incidents, so 38% of its gap to the line rate (3.12 min) is treated as noise."
   },
   {
    "station_label": "Kennedy (Line 2)",
@@ -1798,8 +1798,8 @@
    "naive_rank": 56,
    "shrunk_rank": 62,
    "rank_change": -6,
-   "shrinkage_weight": 0.056848062545021484,
-   "explanation": "Dropped 6 places: its well-measured rate (3,054 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+   "shrinkage_weight": 0.05543499173798155,
+   "explanation": "Dropped 6 places: shrinkage moved its rate +0.02 min; well measured (3,054 incidents, 6% shrinkage), so it fell behind stations whose estimates moved more."
   },
   {
    "station_label": "Bayview (Line 4)",
@@ -1807,8 +1807,8 @@
    "naive_rank": 52,
    "shrunk_rank": 48,
    "rank_change": 4,
-   "shrinkage_weight": 0.2689990604650345,
-   "explanation": "Rose 4 places: few incidents (413), so it was pulled up toward its line rate (3.12 min)."
+   "shrinkage_weight": 0.26378746890802596,
+   "explanation": "Rose 4 places: shrinkage moved its rate +0.17 min; only 413 incidents, so 26% of its gap to the line rate (3.12 min) is treated as noise."
   },
   {
    "station_label": "Leslie (Line 4)",
@@ -1816,8 +1816,8 @@
    "naive_rank": 50,
    "shrunk_rank": 46,
    "rank_change": 4,
-   "shrinkage_weight": 0.2798981597143229,
-   "explanation": "Rose 4 places: few incidents (391), so it was pulled up toward its line rate (3.12 min)."
+   "shrinkage_weight": 0.2745547176219266,
+   "explanation": "Rose 4 places: shrinkage moved its rate +0.16 min; only 391 incidents, so 27% of its gap to the line rate (3.12 min) is treated as noise."
   },
   {
    "station_label": "Union (Line 1)",
@@ -1825,8 +1825,8 @@
    "naive_rank": 57,
    "shrunk_rank": 61,
    "rank_change": -4,
-   "shrinkage_weight": 0.08298968669560824,
-   "explanation": "Dropped 4 places: its well-measured rate (1,842 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+   "shrinkage_weight": 0.08098260865941959,
+   "explanation": "Dropped 4 places: shrinkage moved its rate +0.06 min; well measured (1,842 incidents, 8% shrinkage), so it fell behind stations whose estimates moved more."
   },
   {
    "station_label": "Chester (Line 2)",
@@ -1834,8 +1834,8 @@
    "naive_rank": 41,
    "shrunk_rank": 44,
    "rank_change": -3,
-   "shrinkage_weight": 0.2621907542649537,
-   "explanation": "Dropped 3 places: only 518 incidents, so 26% of its gap to the line rate (2.61 min) is treated as noise."
+   "shrinkage_weight": 0.2570646813288362,
+   "explanation": "Dropped 3 places: shrinkage moved its rate -0.04 min; only 518 incidents, so 26% of its gap to the line rate (2.61 min) is treated as noise."
   },
   {
    "station_label": "Don Mills (Line 4)",
@@ -1843,8 +1843,8 @@
    "naive_rank": 24,
    "shrunk_rank": 21,
    "rank_change": 3,
-   "shrinkage_weight": 0.15198198301931068,
-   "explanation": "Rose 3 places: 848 incidents make its rate reliable, while small-sample stations ranked above it were pulled toward their line rates."
+   "shrinkage_weight": 0.1485766934794726,
+   "explanation": "Rose 3 places: shrinkage moved its rate -0.01 min; well measured (848 incidents, 15% shrinkage), so it overtook stations whose estimates moved more."
   },
   {
    "station_label": "Kipling (Line 2)",
@@ -1852,8 +1852,8 @@
    "naive_rank": 49,
    "shrunk_rank": 52,
    "rank_change": -3,
-   "shrinkage_weight": 0.06009590976243228,
-   "explanation": "Dropped 3 places: its well-measured rate (2,879 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+   "shrinkage_weight": 0.05860712393793697,
+   "explanation": "Dropped 3 places: shrinkage moved its rate +0.00 min; well measured (2,879 incidents, 6% shrinkage), so it fell behind stations whose estimates moved more."
   },
   {
    "station_label": "Lansdowne (Line 2)",
@@ -1861,8 +1861,8 @@
    "naive_rank": 40,
    "shrunk_rank": 43,
    "rank_change": -3,
-   "shrinkage_weight": 0.25778467131730853,
-   "explanation": "Dropped 3 places: only 530 incidents, so 26% of its gap to the line rate (2.61 min) is treated as noise."
+   "shrinkage_weight": 0.25271523559699116,
+   "explanation": "Dropped 3 places: shrinkage moved its rate -0.04 min; only 530 incidents, so 25% of its gap to the line rate (2.61 min) is treated as noise."
   },
   {
    "station_label": "St George (Line 1)",
@@ -1870,8 +1870,8 @@
    "naive_rank": 36,
    "shrunk_rank": 33,
    "rank_change": 3,
-   "shrinkage_weight": 0.11258279125602788,
-   "explanation": "Rose 3 places: 1,314 incidents make its rate reliable, while small-sample stations ranked above it were pulled toward their line rates."
+   "shrinkage_weight": 0.10994582326693068,
+   "explanation": "Rose 3 places: shrinkage moved its rate +0.00 min; well measured (1,314 incidents, 11% shrinkage), so it overtook stations whose estimates moved more."
   }
  ],
  "ranking_last_12_months_top15": [
@@ -1883,9 +1883,9 @@
    "incidents": 151,
    "naive_minutes_per_incident": 8.80794701986755,
    "line_minutes_per_incident": 2.5096258626952417,
-   "shrinkage_weight": 0.34644247737671374,
-   "shrunk_minutes_per_incident": 6.625941034862605,
-   "explanation": "Stable: 151 incidents; estimate moved 35% of the way to the line rate."
+   "shrinkage_weight": 0.3434095330032701,
+   "shrunk_minutes_per_incident": 6.6450434925783926,
+   "explanation": "Stable: 151 incidents; estimate moved 34% of the way to its line rate (2.51 min)."
   },
   {
    "shrunk_rank": 2,
@@ -1895,9 +1895,9 @@
    "incidents": 326,
    "naive_minutes_per_incident": 6.932515337423313,
    "line_minutes_per_incident": 2.7930563848844154,
-   "shrinkage_weight": 0.38635416928247984,
-   "shrunk_minutes_per_incident": 5.333218112536223,
-   "explanation": "Stable: 326 incidents; estimate moved 39% of the way to the line rate."
+   "shrinkage_weight": 0.3831766724248888,
+   "shrunk_minutes_per_incident": 5.346371230350043,
+   "explanation": "Stable: 326 incidents; estimate moved 38% of the way to its line rate (2.79 min)."
   },
   {
    "shrunk_rank": 3,
@@ -1907,9 +1907,9 @@
    "incidents": 201,
    "naive_minutes_per_incident": 4.930348258706467,
    "line_minutes_per_incident": 2.5096258626952417,
-   "shrinkage_weight": 0.28480737683686635,
-   "shrunk_minutes_per_incident": 4.2409086630482555,
-   "explanation": "Stable: 201 incidents; estimate moved 28% of the way to the line rate."
+   "shrinkage_weight": 0.28208112896431503,
+   "shrunk_minutes_per_incident": 4.247508152330419,
+   "explanation": "Stable: 201 incidents; estimate moved 28% of the way to its line rate (2.51 min)."
   },
   {
    "shrunk_rank": 4,
@@ -1919,9 +1919,9 @@
    "incidents": 343,
    "naive_minutes_per_incident": 4.317784256559767,
    "line_minutes_per_incident": 2.5096258626952417,
-   "shrinkage_weight": 0.189208036999399,
-   "shrunk_minutes_per_incident": 3.975666156272674,
-   "explanation": "Stable: 343 incidents; estimate moved 19% of the way to the line rate."
+   "shrinkage_weight": 0.18715741901088606,
+   "shrunk_minutes_per_incident": 3.9793739984012135,
+   "explanation": "Stable: 343 incidents; estimate moved 19% of the way to its line rate (2.51 min)."
   },
   {
    "shrunk_rank": 5,
@@ -1931,9 +1931,9 @@
    "incidents": 477,
    "naive_minutes_per_incident": 4.469601677148847,
    "line_minutes_per_incident": 2.7930563848844154,
-   "shrinkage_weight": 0.3008438891114329,
-   "shrunk_minutes_per_incident": 3.965223271152552,
-   "explanation": "Stable: 477 incidents; estimate moved 30% of the way to the line rate."
+   "shrinkage_weight": 0.2980281030377122,
+   "shrunk_minutes_per_incident": 3.9699440640384718,
+   "explanation": "Stable: 477 incidents; estimate moved 30% of the way to its line rate (2.79 min)."
   },
   {
    "shrunk_rank": 6,
@@ -1943,9 +1943,9 @@
    "incidents": 258,
    "naive_minutes_per_incident": 4.248062015503876,
    "line_minutes_per_incident": 2.5096258626952417,
-   "shrinkage_weight": 0.2367838637090118,
-   "shrunk_minutes_per_incident": 3.836428386430418,
-   "explanation": "Stable: 258 incidents; estimate moved 24% of the way to the line rate."
+   "shrinkage_weight": 0.2343666687977256,
+   "shrunk_minutes_per_incident": 3.8406305254525828,
+   "explanation": "Stable: 258 incidents; estimate moved 23% of the way to its line rate (2.51 min)."
   },
   {
    "shrunk_rank": 7,
@@ -1955,9 +1955,9 @@
    "incidents": 168,
    "naive_minutes_per_incident": 4.244047619047619,
    "line_minutes_per_incident": 2.5096258626952417,
-   "shrinkage_weight": 0.32269853723535696,
-   "shrunk_minutes_per_incident": 3.6843522553235273,
-   "explanation": "Stable: 168 incidents; estimate moved 32% of the way to the line rate."
+   "shrinkage_weight": 0.31977175510718264,
+   "shrunk_minutes_per_incident": 3.6894285299227367,
+   "explanation": "Stable: 168 incidents; estimate moved 32% of the way to its line rate (2.51 min)."
   },
   {
    "shrunk_rank": 8,
@@ -1967,9 +1967,9 @@
    "incidents": 301,
    "naive_minutes_per_incident": 4.232558139534884,
    "line_minutes_per_incident": 2.7930563848844154,
-   "shrinkage_weight": 0.4054333474493625,
-   "shrunk_minutes_per_incident": 3.6489361244877134,
-   "explanation": "Stable: 301 incidents; estimate moved 41% of the way to the line rate."
+   "shrinkage_weight": 0.40220178301990256,
+   "shrunk_minutes_per_incident": 3.6535879671541878,
+   "explanation": "Stable: 301 incidents; estimate moved 40% of the way to its line rate (2.79 min)."
   },
   {
    "shrunk_rank": 9,
@@ -1979,9 +1979,9 @@
    "incidents": 211,
    "naive_minutes_per_incident": 4.454976303317536,
    "line_minutes_per_incident": 2.7930563848844154,
-   "shrinkage_weight": 0.49309438785485404,
-   "shrunk_minutes_per_incident": 3.6354929184739673,
-   "explanation": "Dropped 4 places: only 211 incidents, so 49% of its gap to the line rate (2.79 min) is treated as noise."
+   "shrinkage_weight": 0.4897396342187005,
+   "shrunk_minutes_per_incident": 3.6410682503633267,
+   "explanation": "Dropped 4 places: shrinkage moved its rate -0.81 min; only 211 incidents, so 49% of its gap to the line rate (2.79 min) is treated as noise."
   },
   {
    "shrunk_rank": 10,
@@ -1991,9 +1991,9 @@
    "incidents": 337,
    "naive_minutes_per_incident": 3.8130563798219583,
    "line_minutes_per_incident": 2.922222222222222,
-   "shrinkage_weight": 0.2577044965472994,
-   "shrunk_minutes_per_incident": 3.5834844117305806,
-   "explanation": "Rose 4 places: few incidents (337), so it was pulled down toward its line rate (2.92 min)."
+   "shrinkage_weight": 0.25514513055889776,
+   "shrunk_minutes_per_incident": 3.585764382374848,
+   "explanation": "Rose 4 places: shrinkage moved its rate -0.23 min; only 337 incidents, so 26% of its gap to the line rate (2.92 min) is treated as noise."
   },
   {
    "shrunk_rank": 11,
@@ -2003,9 +2003,9 @@
    "incidents": 161,
    "naive_minutes_per_incident": 4.099378881987578,
    "line_minutes_per_incident": 2.5096258626952417,
-   "shrinkage_weight": 0.33206984523183836,
-   "shrunk_minutes_per_incident": 3.571469842914324,
-   "explanation": "Stable: 161 incidents; estimate moved 33% of the way to the line rate."
+   "shrinkage_weight": 0.3290993669735044,
+   "shrunk_minutes_per_incident": 3.5761921696942527,
+   "explanation": "Stable: 161 incidents; estimate moved 33% of the way to its line rate (2.51 min)."
   },
   {
    "shrunk_rank": 12,
@@ -2015,9 +2015,9 @@
    "incidents": 229,
    "naive_minutes_per_incident": 3.8602620087336246,
    "line_minutes_per_incident": 2.5096258626952417,
-   "shrinkage_weight": 0.2590031934838802,
-   "shrunk_minutes_per_incident": 3.5104429336749234,
-   "explanation": "Stable: 229 incidents; estimate moved 26% of the way to the line rate."
+   "shrinkage_weight": 0.256435385353814,
+   "shrunk_minutes_per_incident": 3.5139111081514818,
+   "explanation": "Stable: 229 incidents; estimate moved 26% of the way to its line rate (2.51 min)."
   },
   {
    "shrunk_rank": 13,
@@ -2027,9 +2027,9 @@
    "incidents": 240,
    "naive_minutes_per_incident": 4.083333333333333,
    "line_minutes_per_incident": 2.7930563848844154,
-   "shrinkage_weight": 0.46097826634610684,
-   "shrunk_minutes_per_incident": 3.488543702531006,
-   "explanation": "Stable: 240 incidents; estimate moved 46% of the way to the line rate."
+   "shrinkage_weight": 0.4576447465530714,
+   "shrunk_minutes_per_incident": 3.492844866277158,
+   "explanation": "Stable: 240 incidents; estimate moved 46% of the way to its line rate (2.79 min)."
   },
   {
    "shrunk_rank": 14,
@@ -2039,9 +2039,9 @@
    "incidents": 269,
    "naive_minutes_per_incident": 3.7620817843866172,
    "line_minutes_per_incident": 2.5096258626952417,
-   "shrinkage_weight": 0.2293216849722113,
-   "shrunk_minutes_per_incident": 3.474866482070927,
-   "explanation": "Stable: 269 incidents; estimate moved 23% of the way to the line rate."
+   "shrinkage_weight": 0.2269580144297416,
+   "shrunk_minutes_per_incident": 3.4778268752387707,
+   "explanation": "Stable: 269 incidents; estimate moved 23% of the way to its line rate (2.51 min)."
   },
   {
    "shrunk_rank": 15,
@@ -2051,9 +2051,9 @@
    "incidents": 201,
    "naive_minutes_per_incident": 3.9950248756218905,
    "line_minutes_per_incident": 2.7930563848844154,
-   "shrinkage_weight": 0.5052320640978336,
-   "shrunk_minutes_per_incident": 3.387751854066038,
-   "explanation": "Dropped 3 places: only 201 incidents, so 51% of its gap to the line rate (2.79 min) is treated as noise."
+   "shrinkage_weight": 0.5018764911840371,
+   "shrunk_minutes_per_incident": 3.391785146976794,
+   "explanation": "Dropped 3 places: shrinkage moved its rate -0.60 min; only 201 incidents, so 50% of its gap to the line rate (2.79 min) is treated as noise."
   }
  ],
  "ranking_last_12_months_movers": [
@@ -2063,8 +2063,8 @@
    "naive_rank": 63,
    "shrunk_rank": 51,
    "rank_change": 12,
-   "shrinkage_weight": 0.5571367246199039,
-   "explanation": "Rose 12 places: few incidents (93), so it was pulled up toward its line rate (2.92 min)."
+   "shrinkage_weight": 0.5538222981746586,
+   "explanation": "Rose 12 places: shrinkage moved its rate +0.62 min; only 93 incidents, so 55% of its gap to the line rate (2.92 min) is treated as noise."
   },
   {
    "station_label": "Runnymede (Line 2)",
@@ -2072,8 +2072,8 @@
    "naive_rank": 62,
    "shrunk_rank": 52,
    "rank_change": 10,
-   "shrinkage_weight": 0.5604108324188459,
-   "explanation": "Rose 10 places: few incidents (161), so it was pulled up toward its line rate (2.79 min)."
+   "shrinkage_weight": 0.5571014303374903,
+   "explanation": "Rose 10 places: shrinkage moved its rate +0.50 min; only 161 incidents, so 56% of its gap to the line rate (2.79 min) is treated as noise."
   },
   {
    "station_label": "Dufferin (Line 2)",
@@ -2081,8 +2081,8 @@
    "naive_rank": 69,
    "shrunk_rank": 60,
    "rank_change": 9,
-   "shrinkage_weight": 0.45891688157021504,
-   "explanation": "Rose 9 places: few incidents (242), so it was pulled up toward its line rate (2.79 min)."
+   "shrinkage_weight": 0.455585669210642,
+   "explanation": "Rose 9 places: shrinkage moved its rate +0.53 min; only 242 incidents, so 46% of its gap to the line rate (2.79 min) is treated as noise."
   },
   {
    "station_label": "Bayview (Line 4)",
@@ -2090,8 +2090,8 @@
    "naive_rank": 55,
    "shrunk_rank": 47,
    "rank_change": 8,
-   "shrinkage_weight": 0.43014096643849575,
-   "explanation": "Rose 8 places: few incidents (155), so it was pulled up toward its line rate (2.92 min)."
+   "shrinkage_weight": 0.42685385126077324,
+   "explanation": "Rose 8 places: shrinkage moved its rate +0.34 min; only 155 incidents, so 43% of its gap to the line rate (2.92 min) is treated as noise."
   },
   {
    "station_label": "Leslie (Line 4)",
@@ -2099,8 +2099,8 @@
    "naive_rank": 35,
    "shrunk_rank": 29,
    "rank_change": 6,
-   "shrinkage_weight": 0.5223152272793283,
-   "explanation": "Rose 6 places: few incidents (107), so it was pulled up toward its line rate (2.92 min)."
+   "shrinkage_weight": 0.5189652032903597,
+   "explanation": "Rose 6 places: shrinkage moved its rate +0.03 min; only 107 incidents, so 52% of its gap to the line rate (2.92 min) is treated as noise."
   },
   {
    "station_label": "Queen (Line 1)",
@@ -2108,8 +2108,8 @@
    "naive_rank": 51,
    "shrunk_rank": 57,
    "rank_change": -6,
-   "shrinkage_weight": 0.20210717886464952,
-   "explanation": "Dropped 6 places: its well-measured rate (316 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+   "shrinkage_weight": 0.19995123755355357,
+   "explanation": "Dropped 6 places: shrinkage moved its rate +0.07 min; well measured (316 incidents, 20% shrinkage), so it fell behind stations whose estimates moved more."
   },
   {
    "station_label": "Bathurst (Line 2)",
@@ -2117,8 +2117,8 @@
    "naive_rank": 71,
    "shrunk_rank": 66,
    "rank_change": 5,
-   "shrinkage_weight": 0.3689899701447565,
-   "explanation": "Rose 5 places: few incidents (351), so it was pulled up toward its line rate (2.79 min)."
+   "shrinkage_weight": 0.365870136017037,
+   "explanation": "Rose 5 places: shrinkage moved its rate +0.49 min; only 351 incidents, so 37% of its gap to the line rate (2.79 min) is treated as noise."
   },
   {
    "station_label": "Highway 407 (Line 1)",
@@ -2126,8 +2126,8 @@
    "naive_rank": 33,
    "shrunk_rank": 38,
    "rank_change": -5,
-   "shrinkage_weight": 0.3334532207682088,
-   "explanation": "Dropped 5 places: only 160 incidents, so 33% of its gap to the line rate (2.51 min) is treated as noise."
+   "shrinkage_weight": 0.33047649049320793,
+   "explanation": "Dropped 5 places: shrinkage moved its rate -0.12 min; only 160 incidents, so 33% of its gap to the line rate (2.51 min) is treated as noise."
   },
   {
    "station_label": "Lansdowne (Line 2)",
@@ -2135,8 +2135,8 @@
    "naive_rank": 16,
    "shrunk_rank": 21,
    "rank_change": -5,
-   "shrinkage_weight": 0.5558577446561084,
-   "explanation": "Dropped 5 places: only 164 incidents, so 56% of its gap to the line rate (2.79 min) is treated as noise."
+   "shrinkage_weight": 0.5525414338641172,
+   "explanation": "Dropped 5 places: shrinkage moved its rate -0.44 min; only 164 incidents, so 55% of its gap to the line rate (2.79 min) is treated as noise."
   },
   {
    "station_label": "St George (Line 1)",
@@ -2144,8 +2144,8 @@
    "naive_rank": 50,
    "shrunk_rank": 55,
    "rank_change": -5,
-   "shrinkage_weight": 0.14066273324691236,
-   "explanation": "Dropped 5 places: its well-measured rate (489 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+   "shrinkage_weight": 0.13904801512174805,
+   "explanation": "Dropped 5 places: shrinkage moved its rate +0.04 min; well measured (489 incidents, 14% shrinkage), so it fell behind stations whose estimates moved more."
   },
   {
    "station_label": "York University (Line 1)",
@@ -2153,8 +2153,8 @@
    "naive_rank": 26,
    "shrunk_rank": 31,
    "rank_change": -5,
-   "shrinkage_weight": 0.4707226320166861,
-   "explanation": "Dropped 5 places: only 90 incidents, so 47% of its gap to the line rate (2.51 min) is treated as noise."
+   "shrinkage_weight": 0.46737974658263265,
+   "explanation": "Dropped 5 places: shrinkage moved its rate -0.28 min; only 90 incidents, so 47% of its gap to the line rate (2.51 min) is treated as noise."
   },
   {
    "station_label": "Cedarvale (Eglinton West) (Line 1)",
@@ -2162,8 +2162,8 @@
    "naive_rank": 58,
    "shrunk_rank": 62,
    "rank_change": -4,
-   "shrinkage_weight": 0.18025987819382625,
-   "explanation": "Dropped 4 places: its well-measured rate (364 incidents) was overtaken by stations pulled up less, or pulled toward a higher line rate."
+   "shrinkage_weight": 0.17828491471137092,
+   "explanation": "Dropped 4 places: shrinkage moved its rate +0.08 min; well measured (364 incidents, 18% shrinkage), so it fell behind stations whose estimates moved more."
   }
  ],
  "ranking_periods": [
@@ -2174,7 +2174,7 @@
    "stations": 80,
    "min_incidents": 449,
    "max_incidents": 10736,
-   "between_variance": 0.18675579860457886,
+   "between_variance": 0.1867557986045789,
    "mean_abs_rank_change": 1.15,
    "max_abs_rank_change": 6,
    "corr_naive_vs_count_rank": -0.4882794186591656
@@ -2183,25 +2183,25 @@
    "period": "Last 36 months",
    "period_start": "2023-09-01 00:00:00",
    "period_end": "2026-08-31 00:00:00",
-   "stations": 76,
-   "min_incidents": 1,
+   "stations": 74,
+   "min_incidents": 240,
    "max_incidents": 3289,
-   "between_variance": 0.6261147170079608,
-   "mean_abs_rank_change": 1.394736842105263,
+   "between_variance": 0.6430367363865542,
+   "mean_abs_rank_change": 1.4324324324324325,
    "max_abs_rank_change": 13,
-   "corr_naive_vs_count_rank": -0.17008885850991062
+   "corr_naive_vs_count_rank": -0.2675305442428725
   },
   {
    "period": "Last 12 months",
    "period_start": "2025-09-01 00:00:00",
    "period_end": "2026-08-31 00:00:00",
-   "stations": 75,
-   "min_incidents": 8,
+   "stations": 74,
+   "min_incidents": 90,
    "max_incidents": 1253,
-   "between_variance": 1.034152324052309,
-   "mean_abs_rank_change": 2.4266666666666667,
+   "between_variance": 1.048127355458421,
+   "mean_abs_rank_change": 2.4594594594594597,
    "max_abs_rank_change": 12,
-   "corr_naive_vs_count_rank": -0.21780938833570423
+   "corr_naive_vs_count_rank": -0.26785634950018516
   }
  ],
  "meta": [

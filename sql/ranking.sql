@@ -12,6 +12,7 @@
 -- Stations with few incidents have large v_i and are pulled most of the way
 -- to their line's rate; stations with many incidents keep their own rate.
 -- Rank 1 = most minutes lost per incident (least reliable).
+-- Only real stations are ranked; segments, yards and line-wide entries are not.
 
 CREATE OR REPLACE MACRO station_ranking_for(d_from, d_to) AS TABLE
 WITH s AS (
@@ -24,7 +25,11 @@ WITH s AS (
         avg(min_delay)                    AS naive_minutes_per_incident,
         coalesce(var_samp(min_delay), 0)  AS within_variance
     FROM v_delay
-    WHERE is_station AND date BETWEEN CAST(d_from AS DATE) AND CAST(d_to AS DATE)
+    WHERE is_station
+      AND date BETWEEN CAST(d_from AS DATE) AND CAST(d_to AS DATE)
+      -- a station closed before the period starts is not ranked (stray
+      -- records logged against the retired Line 3 after its closure)
+      AND (station_closed IS NULL OR station_closed >= CAST(d_from AS DATE))
     GROUP BY station_key, station_label, station_line_code
 ),
 l AS (

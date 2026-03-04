@@ -67,3 +67,22 @@ def test_explanations(change, weight, start):
     assert text.startswith(start)
     if weight >= 0.25 and change:
         assert "treated as noise" in text
+
+
+def test_closed_station_not_ranked_after_closure(tmp_path):
+    from tests.mini_dataset import _write_codes, _write_csv
+    from ttc_delay import pipeline
+
+    rows = [
+        ("2025-01-01", "08:00", "MCCOWAN STATION", "SRDP", 5, 9, "S", "SRT", 1),  # Line 3 closed 2023-07-24
+        ("2025-01-02", "08:00", "FINCH STATION", "SUDP", 4, 8, "S", "YU", 2),
+    ]
+    raw = tmp_path / "raw"
+    raw.mkdir()
+    _write_csv(rows, raw / "ttc-subway-delay-data-since-2025.csv")
+    _write_codes(raw)
+    con = pipeline.run(raw, ":memory:", None, None).con
+    labels = [r[0] for r in con.execute("SELECT station_label FROM station_ranking_all").fetchall()]
+    assert labels == ["Finch (Line 1)"]
+    early = con.execute("SELECT count(*) FROM station_ranking_for(DATE '2023-01-01', DATE '2025-12-31')").fetchone()[0]
+    assert early == 2
