@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "pa_with_minutes",
+  "position": {
+    "x": 20,
+    "y": 390,
+    "z": 0,
+    "height": 110,
+    "width": 240,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Causes with Minutes"
+                }
+              },
+              "queryRef": "fact_delay.Causes with Minutes",
+              "nativeQueryRef": "Causes with Minutes"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

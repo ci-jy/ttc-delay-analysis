@@ -1,0 +1,73 @@
+table dim_cause
+	lineageTag: 1d3e51f0-4bfe-570a-80f7-f36893563b98
+
+	column cause_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 03355af7-0019-5f0c-a4ea-2c99ac883a83
+		summarizeBy: none
+		sourceColumn: cause_key
+
+		annotation SummarizationSetBy = User
+
+	column cause_code
+		dataType: string
+		lineageTag: ae5edbb0-fe0f-524a-860d-ce6d61971548
+		summarizeBy: none
+		sourceColumn: cause_code
+
+		annotation SummarizationSetBy = User
+
+	column cause_description
+		dataType: string
+		lineageTag: d538f447-1098-539f-a496-a939379907ae
+		summarizeBy: none
+		sourceColumn: cause_description
+
+		annotation SummarizationSetBy = User
+
+	column description_source
+		dataType: string
+		lineageTag: 9e117c18-ba67-564d-860e-626a19ca6559
+		summarizeBy: none
+		sourceColumn: description_source
+
+		annotation SummarizationSetBy = User
+
+	column cause_category
+		dataType: string
+		lineageTag: a0426c94-74a4-5f73-b522-624d1f110331
+		summarizeBy: none
+		sourceColumn: cause_category
+
+		annotation SummarizationSetBy = User
+
+	column cause_mode
+		dataType: string
+		lineageTag: 3a20c66e-3256-5eaa-98ff-d1fc54bfc025
+		summarizeBy: none
+		sourceColumn: cause_mode
+
+		annotation SummarizationSetBy = User
+
+	column cause_label
+		dataType: string
+		lineageTag: 4f6ba9c7-074c-5187-bc1d-2df5aac636c3
+		summarizeBy: none
+		sourceColumn: cause_label
+
+		annotation SummarizationSetBy = User
+
+	partition dim_cause = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\dim_cause.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Blanks = Table.TransformColumns(Promoted, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"cause_key", Int64.Type}, {"cause_code", type text}, {"cause_description", type text}, {"description_source", type text}, {"cause_category", type text}, {"cause_mode", type text}, {"cause_label", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "rk_scatter",
+  "position": {
+    "x": 20,
+    "y": 530,
+    "z": 0,
+    "height": 180,
+    "width": 620,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_station"
+                    }
+                  },
+                  "Property": "station_label"
+                }
+              },
+              "queryRef": "dim_station.station_label",
+              "nativeQueryRef": "station_label"
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Naive Minutes per Incident"
+                }
+              },
+              "queryRef": "station_ranking.Naive Minutes per Incident",
+              "nativeQueryRef": "Naive Minutes per Incident"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Shrunk Minutes per Incident"
+                }
+              },
+              "queryRef": "station_ranking.Shrunk Minutes per Incident",
+              "nativeQueryRef": "Shrunk Minutes per Incident"
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Station Incidents"
+                }
+              },
+              "queryRef": "station_ranking.Station Incidents",
+              "nativeQueryRef": "Station Incidents"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Naive vs. shrunk rate (bubble size = incidents)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

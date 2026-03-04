@@ -1,0 +1,6 @@
+/// Folder holding the CSV exports written by `python3 -m ttc_delay run` (data/export).
+expression DataFolder = "C:\ttc-delay-analysis\data\export" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]
+	lineageTag: 02c5efbf-fbce-5dd4-a5fd-19e6a9100f93
+
+	annotation PBI_ResultType = Text
+

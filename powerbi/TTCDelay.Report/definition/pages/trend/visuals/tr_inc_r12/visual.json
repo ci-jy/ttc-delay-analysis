@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "tr_inc_r12",
+  "position": {
+    "x": 860,
+    "y": 285,
+    "z": 0,
+    "height": 135,
+    "width": 400,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Incidents R12M"
+                }
+              },
+              "queryRef": "fact_delay.Incidents R12M",
+              "nativeQueryRef": "Incidents R12M"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

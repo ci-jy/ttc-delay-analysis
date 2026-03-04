@@ -1,0 +1,144 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "tr_years",
+  "position": {
+    "x": 20,
+    "y": 440,
+    "z": 0,
+    "height": 270,
+    "width": 620,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  },
+                  "Property": "year"
+                }
+              },
+              "queryRef": "dim_date.year",
+              "nativeQueryRef": "year"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Incidents"
+                }
+              },
+              "queryRef": "fact_delay.Incidents",
+              "nativeQueryRef": "Incidents"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Incidents YoY %"
+                }
+              },
+              "queryRef": "fact_delay.Incidents YoY %",
+              "nativeQueryRef": "Incidents YoY %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Delay Minutes"
+                }
+              },
+              "queryRef": "fact_delay.Delay Minutes",
+              "nativeQueryRef": "Delay Minutes"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Delay Minutes PY"
+                }
+              },
+              "queryRef": "fact_delay.Delay Minutes PY",
+              "nativeQueryRef": "Delay Minutes PY"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Delay Minutes YoY %"
+                }
+              },
+              "queryRef": "fact_delay.Delay Minutes YoY %",
+              "nativeQueryRef": "Delay Minutes YoY %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Minutes per Incident"
+                }
+              },
+              "queryRef": "fact_delay.Minutes per Incident",
+              "nativeQueryRef": "Minutes per Incident"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Year over year (partial years compare like-for-like dates)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

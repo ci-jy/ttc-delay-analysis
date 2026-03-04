@@ -1,0 +1,114 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "pa_chart",
+  "position": {
+    "x": 280,
+    "y": 130,
+    "z": 0,
+    "height": 330,
+    "width": 980,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "lineClusteredColumnComboChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_cause"
+                    }
+                  },
+                  "Property": "cause_code"
+                }
+              },
+              "queryRef": "dim_cause.cause_code",
+              "nativeQueryRef": "cause_code"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Delay Minutes"
+                }
+              },
+              "queryRef": "fact_delay.Delay Minutes",
+              "nativeQueryRef": "Delay Minutes"
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Cumulative Cause Share"
+                }
+              },
+              "queryRef": "fact_delay.Cumulative Cause Share",
+              "nativeQueryRef": "Cumulative Cause Share"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_delay"
+                  }
+                },
+                "Property": "Delay Minutes"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Delay minutes by cause, with cumulative share'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+relationship f24018f2-9af2-5c77-98cd-d8efe7cd0648
+	fromColumn: fact_delay.date_key
+	toColumn: dim_date.date_key
+
+relationship 30a143c6-f2c8-5148-8c7b-a3dda9ef1b81
+	fromColumn: fact_delay.station_key
+	toColumn: dim_station.station_key
+
+relationship 4d793b1f-5589-5320-901d-956deea91a81
+	fromColumn: fact_delay.line_key
+	toColumn: dim_line.line_key
+
+relationship 11048f5c-5cda-5ffd-8004-af16220d3931
+	fromColumn: fact_delay.cause_key
+	toColumn: dim_cause.cause_key
+
+relationship fbbfbe53-1c1f-5fbb-a7cc-ceb380c33198
+	fromColumn: station_ranking.station_key
+	toColumn: dim_station.station_key

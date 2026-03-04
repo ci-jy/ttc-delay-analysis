@@ -1,0 +1,69 @@
+table dim_line
+	lineageTag: ddeaaa64-eccb-5891-ae06-4cfcb3d1450c
+
+	column line_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0b1f0f59-155c-5b8c-8a89-52977b561cca
+		summarizeBy: none
+		sourceColumn: line_key
+
+		annotation SummarizationSetBy = User
+
+	column line_code
+		dataType: string
+		lineageTag: 0231473e-06f5-528b-bcdc-be53a561b787
+		summarizeBy: none
+		sourceColumn: line_code
+
+		annotation SummarizationSetBy = User
+
+	column line_number
+		dataType: int64
+		formatString: 0
+		lineageTag: d3c701fd-d90a-5564-90d1-5b96abc85056
+		summarizeBy: none
+		sourceColumn: line_number
+
+		annotation SummarizationSetBy = User
+
+	column line_name
+		dataType: string
+		lineageTag: 2645e743-eafc-520d-9ba0-bb97e5fd8565
+		summarizeBy: none
+		sourceColumn: line_name
+		sortByColumn: sort_order
+
+		annotation SummarizationSetBy = User
+
+	column is_subway_line
+		dataType: boolean
+		lineageTag: 61f7c8d7-6055-5819-84b8-76163a410a9a
+		summarizeBy: none
+		sourceColumn: is_subway_line
+
+		annotation SummarizationSetBy = User
+
+	column sort_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 032c066b-8774-5207-8077-7e2b17f66823
+		summarizeBy: none
+		sourceColumn: sort_order
+
+		annotation SummarizationSetBy = User
+
+	partition dim_line = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\dim_line.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Blanks = Table.TransformColumns(Promoted, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"line_key", Int64.Type}, {"line_code", type text}, {"line_number", Int64.Type}, {"line_name", type text}, {"is_subway_line", type logical}, {"sort_order", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

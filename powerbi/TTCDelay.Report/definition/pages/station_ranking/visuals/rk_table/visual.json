@@ -1,0 +1,204 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "rk_table",
+  "position": {
+    "x": 20,
+    "y": 130,
+    "z": 0,
+    "height": 380,
+    "width": 1240,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_station"
+                    }
+                  },
+                  "Property": "station_label"
+                }
+              },
+              "queryRef": "dim_station.station_label",
+              "nativeQueryRef": "station_label"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Station Incidents"
+                }
+              },
+              "queryRef": "station_ranking.Station Incidents",
+              "nativeQueryRef": "Station Incidents"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Naive Minutes per Incident"
+                }
+              },
+              "queryRef": "station_ranking.Naive Minutes per Incident",
+              "nativeQueryRef": "Naive Minutes per Incident"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Line Minutes per Incident"
+                }
+              },
+              "queryRef": "station_ranking.Line Minutes per Incident",
+              "nativeQueryRef": "Line Minutes per Incident"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Shrinkage Weight"
+                }
+              },
+              "queryRef": "station_ranking.Shrinkage Weight",
+              "nativeQueryRef": "Shrinkage Weight"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Shrunk Minutes per Incident"
+                }
+              },
+              "queryRef": "station_ranking.Shrunk Minutes per Incident",
+              "nativeQueryRef": "Shrunk Minutes per Incident"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Naive Rank"
+                }
+              },
+              "queryRef": "station_ranking.Naive Rank",
+              "nativeQueryRef": "Naive Rank"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Shrunk Rank"
+                }
+              },
+              "queryRef": "station_ranking.Shrunk Rank",
+              "nativeQueryRef": "Shrunk Rank"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "Rank Change"
+                }
+              },
+              "queryRef": "station_ranking.Rank Change",
+              "nativeQueryRef": "Rank Change"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "station_ranking"
+                    }
+                  },
+                  "Property": "explanation"
+                }
+              },
+              "queryRef": "station_ranking.explanation",
+              "nativeQueryRef": "explanation"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "station_ranking"
+                  }
+                },
+                "Property": "Shrunk Rank"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Stations ranked by shrunk minutes per incident (1 = least reliable)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

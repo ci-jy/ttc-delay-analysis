@@ -1,0 +1,162 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "pa_table",
+  "position": {
+    "x": 280,
+    "y": 480,
+    "z": 0,
+    "height": 230,
+    "width": 980,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Cause Rank"
+                }
+              },
+              "queryRef": "fact_delay.Cause Rank",
+              "nativeQueryRef": "Cause Rank"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_cause"
+                    }
+                  },
+                  "Property": "cause_label"
+                }
+              },
+              "queryRef": "dim_cause.cause_label",
+              "nativeQueryRef": "cause_label"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_cause"
+                    }
+                  },
+                  "Property": "cause_category"
+                }
+              },
+              "queryRef": "dim_cause.cause_category",
+              "nativeQueryRef": "cause_category"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Incidents"
+                }
+              },
+              "queryRef": "fact_delay.Incidents",
+              "nativeQueryRef": "Incidents"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Delay Minutes"
+                }
+              },
+              "queryRef": "fact_delay.Delay Minutes",
+              "nativeQueryRef": "Delay Minutes"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Share of Minutes"
+                }
+              },
+              "queryRef": "fact_delay.Share of Minutes",
+              "nativeQueryRef": "Share of Minutes"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_delay"
+                    }
+                  },
+                  "Property": "Cumulative Cause Share"
+                }
+              },
+              "queryRef": "fact_delay.Cumulative Cause Share",
+              "nativeQueryRef": "Cumulative Cause Share"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_delay"
+                  }
+                },
+                "Property": "Delay Minutes"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": false
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Causes ranked by minutes'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

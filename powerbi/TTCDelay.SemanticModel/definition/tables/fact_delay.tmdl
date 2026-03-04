@@ -1,0 +1,323 @@
+table fact_delay
+	lineageTag: bae098d3-4a94-522a-bede-1d65764e81c5
+
+	/// Logged delay incidents.
+	measure Incidents = COUNTROWS ( fact_delay )
+		formatString: #,0
+		displayFolder: Volume
+		lineageTag: 10a8f1ba-cf9b-5727-b8c5-000bd6744422
+
+		annotation SqlTwin = kpi_year.incidents, kpi_month.incidents
+
+	/// Incidents that delayed a train by at least one minute.
+	measure 'Delay Incidents' = CALCULATE ( COUNTROWS ( fact_delay ), fact_delay[min_delay] > 0 )
+		formatString: #,0
+		displayFolder: Volume
+		lineageTag: c773d13e-bafd-5b25-9d10-d1e137886f07
+
+		annotation SqlTwin = kpi_year.delay_incidents
+
+	/// Minutes of delay to the train (Min Delay).
+	measure 'Delay Minutes' = SUM ( fact_delay[min_delay] )
+		formatString: #,0
+		displayFolder: Volume
+		lineageTag: aaf52dc8-738f-51bd-8bc2-ebbfef59a7f7
+
+		annotation SqlTwin = kpi_year.delay_minutes, kpi_month.delay_minutes
+
+	/// Minutes of gap to the following train (Min Gap).
+	measure 'Gap Minutes' = SUM ( fact_delay[min_gap] )
+		formatString: #,0
+		displayFolder: Volume
+		lineageTag: 56096044-acdf-5081-b780-88079864512b
+
+		annotation SqlTwin = kpi_year.gap_minutes
+
+	/// Average delay minutes per logged incident.
+	measure 'Minutes per Incident' = DIVIDE ( [Delay Minutes], [Incidents] )
+		formatString: 0.00
+		displayFolder: Volume
+		lineageTag: 62e25012-bb38-5aa3-999e-6e9a60fe8068
+
+		annotation SqlTwin = kpi_year.minutes_per_incident
+
+	/// Delay minutes in the previous month.
+	measure 'Delay Minutes PM' = CALCULATE ( [Delay Minutes], DATEADD ( dim_date[date], -1, MONTH ) )
+		formatString: #,0
+		displayFolder: Time comparison
+		lineageTag: 8f85be0a-4166-5edc-a56a-ae0cacae7413
+
+		annotation SqlTwin = kpi_month.prev_month_minutes
+
+	/// Month-over-month change in delay minutes.
+	measure 'Delay Minutes MoM %' =
+			VAR prev = [Delay Minutes PM]
+			RETURN
+			    DIVIDE ( [Delay Minutes] - prev, prev )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Time comparison
+		lineageTag: 1b9e0140-8891-5954-8d38-554bc88cab82
+
+		annotation SqlTwin = kpi_month.mom_change_minutes
+
+	/// Month-over-month change in incidents.
+	measure 'Incidents MoM %' =
+			VAR prev = CALCULATE ( [Incidents], DATEADD ( dim_date[date], -1, MONTH ) )
+			RETURN
+			    DIVIDE ( [Incidents] - prev, prev )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Time comparison
+		lineageTag: f9268f72-20c1-579e-9727-4169039ff14b
+
+		annotation SqlTwin = kpi_month.mom_change_incidents
+
+	/// Delay minutes in the same period one year earlier.
+	measure 'Delay Minutes PY' = CALCULATE ( [Delay Minutes], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+		formatString: #,0
+		displayFolder: Time comparison
+		lineageTag: b7f62187-684b-5fd4-a042-3903c27ad26e
+
+		annotation SqlTwin = kpi_year.prev_year_minutes
+
+	/// Year-over-year change in delay minutes.
+	measure 'Delay Minutes YoY %' =
+			VAR py = [Delay Minutes PY]
+			RETURN
+			    DIVIDE ( [Delay Minutes] - py, py )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Time comparison
+		lineageTag: 9d8cd75b-80f8-5ce4-aa55-b0a2be0ef305
+
+		annotation SqlTwin = kpi_year.yoy_change_minutes, kpi_month.yoy_change_minutes
+
+	/// Incidents in the same period one year earlier.
+	measure 'Incidents PY' = CALCULATE ( [Incidents], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+		formatString: #,0
+		displayFolder: Time comparison
+		lineageTag: 4b1cbcd3-5960-5895-b71d-902934cb12e8
+
+		annotation SqlTwin = kpi_year.prev_year_incidents
+
+	/// Year-over-year change in incidents.
+	measure 'Incidents YoY %' =
+			VAR py = [Incidents PY]
+			RETURN
+			    DIVIDE ( [Incidents] - py, py )
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Time comparison
+		lineageTag: 94615f7d-23f4-5195-9a99-b0fb63991cc2
+
+		annotation SqlTwin = kpi_year.yoy_change_incidents
+
+	/// Delay minutes in the 12 months ending with the current period.
+	measure 'Delay Minutes R12M' =
+			CALCULATE (
+			    [Delay Minutes],
+			    DATESINPERIOD ( dim_date[date], MAX ( dim_date[date] ), -12, MONTH )
+			)
+		formatString: #,0
+		displayFolder: Time comparison
+		lineageTag: 8d0c76be-8990-53f6-91ef-2a48d3eba74c
+
+		annotation SqlTwin = kpi_month.rolling_12m_minutes
+
+	/// Incidents in the 12 months ending with the current period.
+	measure 'Incidents R12M' =
+			CALCULATE (
+			    [Incidents],
+			    DATESINPERIOD ( dim_date[date], MAX ( dim_date[date] ), -12, MONTH )
+			)
+		formatString: #,0
+		displayFolder: Time comparison
+		lineageTag: 08d9e67c-b030-5b05-835e-227f56836577
+
+		annotation SqlTwin = kpi_month.rolling_12m_incidents
+
+	/// Share of the delay minutes in the current line/year scope.
+	measure 'Share of Minutes' = DIVIDE ( [Delay Minutes], CALCULATE ( [Delay Minutes], ALL ( dim_cause ) ) )
+		formatString: 0.0%
+		displayFolder: Causes
+		lineageTag: 2c694c61-8892-5da8-84c6-56221d478bcc
+
+		annotation SqlTwin = kpi_cause.share_of_minutes
+
+	/// Rank of the cause by delay minutes (ties broken by code).
+	measure 'Cause Rank' =
+			VAR c = SELECTEDVALUE ( dim_cause[cause_code] )
+			VAR m = [Delay Minutes]
+			VAR causes =
+			    FILTER (
+			        ADDCOLUMNS ( ALLSELECTED ( dim_cause ), "@m", [Delay Minutes], "@n", [Incidents] ),
+			        NOT ISBLANK ( [@n] )
+			    )
+			RETURN
+			    IF (
+			        NOT ISBLANK ( c ) && NOT ISBLANK ( [Incidents] ),
+			        COUNTROWS ( FILTER ( causes, [@m] > m || ( [@m] = m && dim_cause[cause_code] < c ) ) ) + 1
+			    )
+		formatString: 0
+		displayFolder: Causes
+		lineageTag: dfa3dbc8-17a6-5b90-b716-e3abd96d7126
+
+		annotation SqlTwin = kpi_cause.minutes_rank
+
+	/// Pareto line: share of minutes from this cause and all causes ranked above it.
+	measure 'Cumulative Cause Share' =
+			VAR c = SELECTEDVALUE ( dim_cause[cause_code] )
+			VAR m = [Delay Minutes]
+			VAR causes = ADDCOLUMNS ( ALLSELECTED ( dim_cause ), "@m", [Delay Minutes] )
+			VAR total = SUMX ( causes, [@m] )
+			VAR cumulative =
+			    SUMX ( FILTER ( causes, [@m] > m || ( [@m] = m && dim_cause[cause_code] <= c ) ), [@m] )
+			RETURN
+			    IF ( NOT ISBLANK ( c ), DIVIDE ( cumulative, total ) )
+		formatString: 0.0%
+		displayFolder: Causes
+		lineageTag: 85c7f055-f289-5a4e-af97-ecd77cf660fe
+
+		annotation SqlTwin = kpi_cause.cumulative_share
+
+	/// How many causes it takes to reach 80% of delay minutes.
+	measure 'Causes to 80%' =
+			VAR causes =
+			    FILTER ( ADDCOLUMNS ( VALUES ( dim_cause[cause_code] ), "@m", [Delay Minutes] ), [@m] > 0 )
+			VAR total = SUMX ( causes, [@m] )
+			RETURN
+			    COUNTROWS (
+			        FILTER (
+			            causes,
+			            VAR m = [@m]
+			            VAR c = dim_cause[cause_code]
+			            VAR above =
+			                SUMX ( FILTER ( causes, [@m] > m || ( [@m] = m && dim_cause[cause_code] < c ) ), [@m] )
+			            RETURN
+			                DIVIDE ( above, total ) < 0.8
+			        )
+			    )
+		formatString: 0
+		displayFolder: Causes
+		lineageTag: 2ba8f473-abf3-5a3b-960e-505d1b1145e1
+
+		annotation SqlTwin = kpi_pareto.causes_to_80pct
+
+	/// Causes with at least one minute of delay.
+	measure 'Causes with Minutes' = COUNTROWS ( FILTER ( VALUES ( dim_cause[cause_code] ), [Delay Minutes] > 0 ) )
+		formatString: 0
+		displayFolder: Causes
+		lineageTag: 54560312-9738-5e98-9264-4c0c028aa666
+
+		annotation SqlTwin = kpi_pareto.causes_with_minutes
+
+	/// Causes reaching 80% of minutes as a share of all causes with minutes.
+	measure 'Share of Causes to 80%' = DIVIDE ( [Causes to 80%], [Causes with Minutes] )
+		formatString: 0.0%
+		displayFolder: Causes
+		lineageTag: 41c209dd-ef44-56d6-9ebb-5cf1410a9002
+
+		annotation SqlTwin = kpi_pareto.share_of_causes_to_80pct
+
+	column delay_id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d178f135-e911-56ed-9397-561c9bb0648b
+		summarizeBy: none
+		sourceColumn: delay_id
+
+		annotation SummarizationSetBy = User
+
+	column date_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: fdcf656a-8a52-55a1-9729-5585cbceb4cb
+		summarizeBy: none
+		sourceColumn: date_key
+
+		annotation SummarizationSetBy = User
+
+	column station_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 421abf65-b0dc-5b70-bdf9-992c86d898e5
+		summarizeBy: none
+		sourceColumn: station_key
+
+		annotation SummarizationSetBy = User
+
+	column line_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2a77c31b-36be-56ec-99bb-ad0c2af07379
+		summarizeBy: none
+		sourceColumn: line_key
+
+		annotation SummarizationSetBy = User
+
+	column cause_key
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: bb44833e-b3ce-5422-a5b4-6582d1a0f5f7
+		summarizeBy: none
+		sourceColumn: cause_key
+
+		annotation SummarizationSetBy = User
+
+	column time_of_day
+		dataType: string
+		lineageTag: bcbf2247-4bc5-5b0e-b170-7cdfa899ac60
+		summarizeBy: none
+		sourceColumn: time_of_day
+
+		annotation SummarizationSetBy = User
+
+	column hour
+		dataType: int64
+		formatString: 0
+		lineageTag: 0109b25a-9ba3-5700-bc63-ff958a77d447
+		summarizeBy: none
+		sourceColumn: hour
+
+		annotation SummarizationSetBy = User
+
+	column min_delay
+		dataType: int64
+		formatString: #,0
+		lineageTag: de63acbb-4294-57ce-b5a9-c18a4dd99971
+		summarizeBy: sum
+		sourceColumn: min_delay
+
+		annotation SummarizationSetBy = User
+
+	column min_gap
+		dataType: int64
+		formatString: #,0
+		lineageTag: d5dff084-53d6-5c65-99ec-f3b0ac860fe5
+		summarizeBy: sum
+		sourceColumn: min_gap
+
+		annotation SummarizationSetBy = User
+
+	column bound
+		dataType: string
+		lineageTag: fca5e2ea-e721-5ac7-9515-d314b0cbd9c7
+		summarizeBy: none
+		sourceColumn: bound
+
+		annotation SummarizationSetBy = User
+
+	partition fact_delay = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\fact_delay.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Blanks = Table.TransformColumns(Promoted, {}, each if _ = "" then null else _),
+				    Typed = Table.TransformColumnTypes(Blanks, {{"delay_id", Int64.Type}, {"date_key", Int64.Type}, {"station_key", Int64.Type}, {"line_key", Int64.Type}, {"cause_key", Int64.Type}, {"time_of_day", type text}, {"hour", Int64.Type}, {"min_delay", Int64.Type}, {"min_gap", Int64.Type}, {"bound", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
