@@ -6,7 +6,10 @@ import argparse
 import sys
 from pathlib import Path
 
-from .config import EXPORT_DIR, RAW_DIR, REPORTS_DIR, SAMPLE_DIR, WAREHOUSE_PATH
+from .config import DATA_DIR, EXPORT_DIR, RAW_DIR, REPORTS_DIR, ROOT, SAMPLE_DIR, WAREHOUSE_PATH
+
+# Sample runs write next to each other so they never overwrite real-data outputs.
+SAMPLE_BUILD = DATA_DIR / "sample_build"
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -20,10 +23,11 @@ def main(argv: list[str] | None = None) -> int:
         p = sub.add_parser(name, help=help_text)
         p.add_argument("--raw-dir", type=Path, default=RAW_DIR)
         p.add_argument("--sample", action="store_true",
-                       help=f"use the committed sample in {SAMPLE_DIR.relative_to(SAMPLE_DIR.parents[1])}")
-        p.add_argument("--db", type=Path, default=WAREHOUSE_PATH)
-        p.add_argument("--reports-dir", type=Path, default=REPORTS_DIR)
-        p.add_argument("--export-dir", type=Path, default=EXPORT_DIR)
+                       help=f"use the committed sample in {SAMPLE_DIR.relative_to(ROOT)}; "
+                            f"outputs go to {SAMPLE_BUILD.relative_to(ROOT)}")
+        p.add_argument("--db", type=Path, help=f"DuckDB file (default {WAREHOUSE_PATH.relative_to(ROOT)})")
+        p.add_argument("--reports-dir", type=Path, help=f"default {REPORTS_DIR.relative_to(ROOT)}")
+        p.add_argument("--export-dir", type=Path, help=f"Power BI CSV exports (default {EXPORT_DIR.relative_to(ROOT)})")
     args = parser.parse_args(argv)
 
     from . import download, pipeline
@@ -33,7 +37,16 @@ def main(argv: list[str] | None = None) -> int:
         print(f"downloaded files listed in {path}")
         if args.command == "download":
             return 0
-    raw_dir = SAMPLE_DIR if args.sample else args.raw_dir
+    if args.sample:
+        raw_dir = SAMPLE_DIR
+        args.db = args.db or SAMPLE_BUILD / "ttc_delay.duckdb"
+        args.reports_dir = args.reports_dir or SAMPLE_BUILD / "reports"
+        args.export_dir = args.export_dir or SAMPLE_BUILD / "export"
+    else:
+        raw_dir = args.raw_dir
+        args.db = args.db or WAREHOUSE_PATH
+        args.reports_dir = args.reports_dir or REPORTS_DIR
+        args.export_dir = args.export_dir or EXPORT_DIR
     result = pipeline.run(raw_dir, args.db, args.reports_dir, args.export_dir)
     for check in result.checks:
         print(f"[{check.status.upper():4}] {check.name}: {check.detail}")
