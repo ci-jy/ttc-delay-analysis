@@ -54,6 +54,7 @@ TWIN_CASES: dict[str, list[tuple[str, dict, float]]] = {
     ],
     "kpi_year.gap_minutes": [("mini", {"line_code": "ALL", "year": 2023}, 69)],
     "kpi_year.minutes_per_incident": [("mini", {"line_code": "ALL", "year": 2023}, 45 / 7)],
+    "kpi_month.minutes_per_incident": [("mini", {"line_code": "ALL", "year_month": "2023-01"}, 20 / 4)],
     "kpi_year.prev_year_minutes": [
         ("mini", {"line_code": "ALL", "year": 2024}, 45),
         ("mini", {"line_code": "ALL", "year": 2025}, 25),
@@ -89,6 +90,10 @@ TWIN_CASES: dict[str, list[tuple[str, dict, float]]] = {
     "kpi_cause.share_of_minutes": [
         ("mini", {"line_scope": "ALL", "year_scope": "ALL", "cause_code": "SUDP"}, 30 / 78),
         ("mini", {"line_scope": "ALL", "year_scope": "2023", "cause_code": "PUOPO"}, 20 / 45),
+    ],
+    # Line 2, 2023: SUDP rows 1 and 7 give 10 + 2 = 12 of the line's 15 minutes
+    "kpi_category_year.share_of_minutes": [
+        ("mini", {"line_code": "BD", "year": 2023, "cause_category": "Security & passenger behaviour"}, 12 / 15),
     ],
     "kpi_cause.minutes_rank": [
         ("mini", {"line_scope": "ALL", "year_scope": "ALL", "cause_code": "PUOPO"}, 2),

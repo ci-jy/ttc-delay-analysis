@@ -155,7 +155,7 @@ MEASURES = [
     ("fact_delay", "Gap Minutes", "SUM ( fact_delay[min_gap] )", "#,0", "Volume",
      ["kpi_year.gap_minutes"], "Minutes of gap to the following train (Min Gap)."),
     ("fact_delay", "Minutes per Incident", "DIVIDE ( [Delay Minutes], [Incidents] )", "0.00", "Volume",
-     ["kpi_year.minutes_per_incident"], "Average delay minutes per logged incident."),
+     ["kpi_year.minutes_per_incident", "kpi_month.minutes_per_incident"], "Average delay minutes per logged incident."),
     ("fact_delay", "Delay Minutes PM",
      "CALCULATE ( [Delay Minutes], DATEADD ( dim_date[date], -1, MONTH ) )", "#,0", "Time comparison",
      ["kpi_month.prev_month_minutes"], "Delay minutes in the previous month."),
@@ -185,7 +185,8 @@ MEASURES = [
      "#,0", "Time comparison", ["kpi_month.rolling_12m_incidents"], "Incidents in the 12 months ending with the current period."),
     ("fact_delay", "Share of Minutes",
      "DIVIDE ( [Delay Minutes], CALCULATE ( [Delay Minutes], ALL ( dim_cause ) ) )", "0.0%", "Causes",
-     ["kpi_cause.share_of_minutes"], "Share of the delay minutes in the current line/year scope."),
+     ["kpi_cause.share_of_minutes", "kpi_category_year.share_of_minutes"],
+     "Share of the delay minutes in the current line/year scope."),
     ("fact_delay", "Cause Rank",
      "VAR c = SELECTEDVALUE ( dim_cause[cause_code] )\n"
      "VAR m = [Delay Minutes]\n"

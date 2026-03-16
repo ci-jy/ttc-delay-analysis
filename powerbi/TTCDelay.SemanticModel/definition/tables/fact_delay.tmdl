@@ -39,7 +39,7 @@ table fact_delay
 		displayFolder: Volume
 		lineageTag: 62e25012-bb38-5aa3-999e-6e9a60fe8068
 
-		annotation SqlTwin = kpi_year.minutes_per_incident
+		annotation SqlTwin = kpi_year.minutes_per_incident, kpi_month.minutes_per_incident
 
 	/// Delay minutes in the previous month.
 	measure 'Delay Minutes PM' = CALCULATE ( [Delay Minutes], DATEADD ( dim_date[date], -1, MONTH ) )
@@ -139,7 +139,7 @@ table fact_delay
 		displayFolder: Causes
 		lineageTag: 2c694c61-8892-5da8-84c6-56221d478bcc
 
-		annotation SqlTwin = kpi_cause.share_of_minutes
+		annotation SqlTwin = kpi_cause.share_of_minutes, kpi_category_year.share_of_minutes
 
 	/// Rank of the cause by delay minutes (ties broken by code).
 	measure 'Cause Rank' =

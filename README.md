@@ -140,7 +140,7 @@ visuals); edit the spec and rerun it rather than hand-editing the files.
 ## Tests and checks
 
 ```bash
-python3 -m pytest -q          # 169 tests, offline, about 6 seconds
+python3 -m pytest -q          # 171 tests, offline, about 6 seconds
 python3 tools/check_pbip.py   # PBIP structure, DAX references, SQL twins, exports, report bindings
 ```
 
