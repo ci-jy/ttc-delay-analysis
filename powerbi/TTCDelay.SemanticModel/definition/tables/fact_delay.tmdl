@@ -113,7 +113,7 @@ table fact_delay
 	measure 'Delay Minutes R12M' =
 			CALCULATE (
 			    [Delay Minutes],
-			    DATESINPERIOD ( dim_date[date], MAX ( dim_date[date] ), -12, MONTH )
+			    DATESBETWEEN ( dim_date[date], EDATE ( MAX ( dim_date[month_start] ), -11 ), MAX ( dim_date[date] ) )
 			)
 		formatString: #,0
 		displayFolder: Time comparison
@@ -125,7 +125,7 @@ table fact_delay
 	measure 'Incidents R12M' =
 			CALCULATE (
 			    [Incidents],
-			    DATESINPERIOD ( dim_date[date], MAX ( dim_date[date] ), -12, MONTH )
+			    DATESBETWEEN ( dim_date[date], EDATE ( MAX ( dim_date[month_start] ), -11 ), MAX ( dim_date[date] ) )
 			)
 		formatString: #,0
 		displayFolder: Time comparison
@@ -170,7 +170,7 @@ table fact_delay
 			VAR cumulative =
 			    SUMX ( FILTER ( causes, [@m] > m || ( [@m] = m && dim_cause[cause_code] <= c ) ), [@m] )
 			RETURN
-			    IF ( NOT ISBLANK ( c ), DIVIDE ( cumulative, total ) )
+			    IF ( NOT ISBLANK ( c ) && NOT ISBLANK ( [Incidents] ), DIVIDE ( cumulative, total ) )
 		formatString: 0.0%
 		displayFolder: Causes
 		lineageTag: 85c7f055-f289-5a4e-af97-ecd77cf660fe

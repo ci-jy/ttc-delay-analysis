@@ -200,14 +200,15 @@ SELECT
 FROM kpi_cause
 GROUP BY line_scope, year_scope;
 
--- Minutes by cause category (Equipment, Plant, Security, ...), per line and year.
+-- Minutes by cause category (Equipment, Plant, Security, ...), per line ('ALL' = network) and year.
 CREATE OR REPLACE VIEW kpi_category_year AS
 SELECT
-    line_code,
+    coalesce(line_code, 'ALL') AS line_code,
     year,
     cause_category,
     count(*)        AS incidents,
     sum(min_delay)  AS delay_minutes,
-    sum(min_delay) / sum(sum(min_delay)) OVER (PARTITION BY line_code, year) AS share_of_minutes
+    sum(min_delay) / nullif(sum(sum(min_delay)) OVER (PARTITION BY coalesce(line_code, 'ALL'), year), 0)
+                    AS share_of_minutes
 FROM v_delay
-GROUP BY line_code, year, cause_category;
+GROUP BY GROUPING SETS ((line_code, year, cause_category), (year, cause_category));

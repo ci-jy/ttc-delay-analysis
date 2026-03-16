@@ -94,6 +94,8 @@ TWIN_CASES: dict[str, list[tuple[str, dict, float]]] = {
     # Line 2, 2023: SUDP rows 1 and 7 give 10 + 2 = 12 of the line's 15 minutes
     "kpi_category_year.share_of_minutes": [
         ("mini", {"line_code": "BD", "year": 2023, "cause_category": "Security & passenger behaviour"}, 12 / 15),
+        # network 2023: SUDP 10 + 6 + 2 = 18 of 45 minutes
+        ("mini", {"line_code": "ALL", "year": 2023, "cause_category": "Security & passenger behaviour"}, 18 / 45),
     ],
     "kpi_cause.minutes_rank": [
         ("mini", {"line_scope": "ALL", "year_scope": "ALL", "cause_code": "PUOPO"}, 2),

@@ -2,7 +2,11 @@ table station_ranking
 	lineageTag: 6202a891-cebc-542d-911f-016ba33c58c3
 
 	/// Incidents at the station in the selected ranking period.
-	measure 'Station Incidents' = SUM ( station_ranking[incidents] )
+	measure 'Station Incidents' =
+			VAR p =
+			    IF ( HASONEVALUE ( station_ranking[period] ), VALUES ( station_ranking[period] ), "All years" )
+			RETURN
+			    CALCULATE ( SUM ( station_ranking[incidents] ), station_ranking[period] = p )
 		formatString: #,0
 		displayFolder: Ranking
 		lineageTag: e8150efb-526b-532b-b885-e598964db11e
@@ -10,7 +14,11 @@ table station_ranking
 		annotation SqlTwin = station_ranking_all.incidents
 
 	/// The station's own minutes per incident.
-	measure 'Naive Minutes per Incident' = AVERAGE ( station_ranking[naive_minutes_per_incident] )
+	measure 'Naive Minutes per Incident' =
+			VAR p =
+			    IF ( HASONEVALUE ( station_ranking[period] ), VALUES ( station_ranking[period] ), "All years" )
+			RETURN
+			    CALCULATE ( AVERAGE ( station_ranking[naive_minutes_per_incident] ), station_ranking[period] = p )
 		formatString: 0.00
 		displayFolder: Ranking
 		lineageTag: 739330e0-b7f1-55fa-9b33-397cb3a4bdb4
@@ -18,7 +26,11 @@ table station_ranking
 		annotation SqlTwin = station_ranking_all.naive_minutes_per_incident
 
 	/// Minutes per incident across the station's line.
-	measure 'Line Minutes per Incident' = AVERAGE ( station_ranking[line_minutes_per_incident] )
+	measure 'Line Minutes per Incident' =
+			VAR p =
+			    IF ( HASONEVALUE ( station_ranking[period] ), VALUES ( station_ranking[period] ), "All years" )
+			RETURN
+			    CALCULATE ( AVERAGE ( station_ranking[line_minutes_per_incident] ), station_ranking[period] = p )
 		formatString: 0.00
 		displayFolder: Ranking
 		lineageTag: a94ba12f-5ff8-55e8-b21b-425ebace0f8b
@@ -26,7 +38,11 @@ table station_ranking
 		annotation SqlTwin = station_ranking_all.line_minutes_per_incident
 
 	/// How far the estimate moved toward the line rate (0% = not at all).
-	measure 'Shrinkage Weight' = AVERAGE ( station_ranking[shrinkage_weight] )
+	measure 'Shrinkage Weight' =
+			VAR p =
+			    IF ( HASONEVALUE ( station_ranking[period] ), VALUES ( station_ranking[period] ), "All years" )
+			RETURN
+			    CALCULATE ( AVERAGE ( station_ranking[shrinkage_weight] ), station_ranking[period] = p )
 		formatString: 0%
 		displayFolder: Ranking
 		lineageTag: ed869fb1-8607-58f5-bb21-1dcb0e21169f
@@ -34,7 +50,11 @@ table station_ranking
 		annotation SqlTwin = station_ranking_all.shrinkage_weight
 
 	/// Empirical-Bayes estimate of minutes per incident.
-	measure 'Shrunk Minutes per Incident' = AVERAGE ( station_ranking[shrunk_minutes_per_incident] )
+	measure 'Shrunk Minutes per Incident' =
+			VAR p =
+			    IF ( HASONEVALUE ( station_ranking[period] ), VALUES ( station_ranking[period] ), "All years" )
+			RETURN
+			    CALCULATE ( AVERAGE ( station_ranking[shrunk_minutes_per_incident] ), station_ranking[period] = p )
 		formatString: 0.00
 		displayFolder: Ranking
 		lineageTag: e6a03d26-2572-5e29-b63e-36f13f15413e
@@ -42,7 +62,11 @@ table station_ranking
 		annotation SqlTwin = station_ranking_all.shrunk_minutes_per_incident
 
 	/// Rank by the station's own rate (1 = most minutes per incident).
-	measure 'Naive Rank' = MIN ( station_ranking[naive_rank] )
+	measure 'Naive Rank' =
+			VAR p =
+			    IF ( HASONEVALUE ( station_ranking[period] ), VALUES ( station_ranking[period] ), "All years" )
+			RETURN
+			    CALCULATE ( MIN ( station_ranking[naive_rank] ), station_ranking[period] = p )
 		formatString: 0
 		displayFolder: Ranking
 		lineageTag: 8aab0d8c-7550-5741-b7e7-75d7c7cd3c12
@@ -50,7 +74,11 @@ table station_ranking
 		annotation SqlTwin = station_ranking_all.naive_rank
 
 	/// Rank by the shrunk rate (1 = least reliable).
-	measure 'Shrunk Rank' = MIN ( station_ranking[shrunk_rank] )
+	measure 'Shrunk Rank' =
+			VAR p =
+			    IF ( HASONEVALUE ( station_ranking[period] ), VALUES ( station_ranking[period] ), "All years" )
+			RETURN
+			    CALCULATE ( MIN ( station_ranking[shrunk_rank] ), station_ranking[period] = p )
 		formatString: 0
 		displayFolder: Ranking
 		lineageTag: b4c120ab-d029-5126-bd3e-a5953be3c089
@@ -58,7 +86,11 @@ table station_ranking
 		annotation SqlTwin = station_ranking_all.shrunk_rank
 
 	/// Naive rank minus shrunk rank (positive = looks worse after shrinkage).
-	measure 'Rank Change' = SUM ( station_ranking[rank_change] )
+	measure 'Rank Change' =
+			VAR p =
+			    IF ( HASONEVALUE ( station_ranking[period] ), VALUES ( station_ranking[period] ), "All years" )
+			RETURN
+			    CALCULATE ( SUM ( station_ranking[rank_change] ), station_ranking[period] = p )
 		formatString: +0;-0;0
 		displayFolder: Ranking
 		lineageTag: c7f05c2d-dfb9-512b-9e03-b3b90cfefeed

@@ -130,7 +130,7 @@ There are four report pages:
 - **Overview:** KPI cards and delay minutes by month and by line.
 - **Cause Pareto:** columns of minutes by cause with a cumulative-share line, cards for "causes to 80%",
   and a ranked cause table.
-- **Station Ranking:** a period slicer, the naive and shrunk rates and ranks, the shrinkage weight, the
+- **Station Ranking:** a period slicer (the ranking measures show "All years" until one period is selected), the naive and shrunk rates and ranks, the shrinkage weight, the
   explanation, a naive-versus-shrunk scatter and a rank-change chart.
 - **Trend:** rolling 12-month minutes by line, MoM and YoY measures, and cause-category shares by year.
 
@@ -140,7 +140,7 @@ visuals); edit the spec and rerun it rather than hand-editing the files.
 ## Tests and checks
 
 ```bash
-python3 -m pytest -q          # 171 tests, offline, about 6 seconds
+python3 -m pytest -q          # 172 tests, offline, about 6 seconds
 python3 tools/check_pbip.py   # PBIP structure, DAX references, SQL twins, exports, report bindings
 ```
 

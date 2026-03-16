@@ -74,7 +74,7 @@ def collect(con: duckdb.DuckDBPyConnection) -> dict[str, pd.DataFrame]:
     t["category_share_by_year"] = q(
         """SELECT year, cause_category, sum(delay_minutes) AS delay_minutes,
                   sum(delay_minutes) / sum(sum(delay_minutes)) OVER (PARTITION BY year) AS share_of_minutes
-           FROM kpi_category_year GROUP BY year, cause_category ORDER BY year, delay_minutes DESC"""
+           FROM kpi_category_year WHERE line_code = 'ALL' GROUP BY year, cause_category ORDER BY year, delay_minutes DESC"""
     )
     for period in ("All years", "Last 36 months", "Last 12 months"):
         key = period.lower().replace(" ", "_")
