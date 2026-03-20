@@ -318,3 +318,5 @@ FINDINGS.md         findings memo
   subset of those files and is redistributed under the same licence.
 - **Code:** MIT. No third-party code is included. The runtime dependencies (pandas, DuckDB, openpyxl,
   requests) are installed from PyPI.
+
+Project period: 2026-02-16 to 2026-03-20.
