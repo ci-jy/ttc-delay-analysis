@@ -15,10 +15,3 @@ data/sample_build/
 # Power BI Desktop local state
 powerbi/**/.pbi/localSettings.json
 powerbi/**/.pbi/cache.abf
-
-# Tooling files
-CLAUDE.md
-AGENTS.md
-GEMINI.md
-.claude/
-.agents/
