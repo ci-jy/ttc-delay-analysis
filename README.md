@@ -1,7 +1,41 @@
 # TTC Subway Delay Analysis
 
-A Power BI semantic model, a root-cause Pareto and a fair station reliability ranking, built from every TTC
-subway delay published by the City of Toronto since 2014.
+Which causes and stations to act on first: a DuckDB warehouse, SQL KPIs and a Power BI report built from every Toronto subway delay logged since 2014, for transit operations and performance analysts.
+
+## Results
+
+- **Found that 41 of 207 delay causes account for 80% of the 682,828 minutes** lost on Toronto's subway since 2014, with SQL KPIs in DuckDB (Pareto, YoY, rolling 12 months) tested against hand-worked values.
+- **Showed incident counts point at the wrong stations:** the 5 stations logging the most incidents rank 52nd-73rd of 74 on minutes per incident in a fair ranking (empirical Bayes, in SQL) that explains each rank change.
+- **Cleaned every TTC delay file since 2014** (3 layouts and 2,000+ station-name spellings) into a DuckDB star schema with Python and pandas, leaving 0.10% of rows unmatched, with data-quality checks.
+- **Built a 4-page Power BI report** (cause Pareto, station ranking, trends) on a TMDL model of 28 DAX measures, with a checker confirming each measure has a hand-tested SQL twin.
+
+The findings, written for a non-technical manager: [FINDINGS.md](FINDINGS.md).
+
+```mermaid
+flowchart LR
+    ckan[Toronto Open Data, CKAN API] --> etl[Python ETL: 3 file layouts, station and cause cleaning]
+    etl --> dq[Data-quality checks]
+    etl --> wh[(DuckDB star schema)]
+    wh --> kpi[SQL KPIs: Pareto, MoM, YoY, rolling 12 months]
+    wh --> rank[Empirical-Bayes station ranking]
+    kpi --> csv[CSV exports]
+    rank --> csv
+    csv --> pbi[Power BI: TMDL model, 28 DAX measures, 4 pages]
+```
+
+**Stack:** Python, pandas, DuckDB (SQL), Power BI (PBIP: TMDL semantic model, DAX), openpyxl, pytest
+
+## Quickstart
+
+```bash
+python3 -m pip install -r requirements.txt   # pandas, duckdb, openpyxl, requests, pytest
+python3 -m ttc_delay run --sample            # offline: warehouse, KPIs, quality checks and Power BI exports from the committed sample
+python3 -m ttc_delay all                     # the real data: downloads every file through the CKAN API, then runs (about a minute)
+```
+
+Then open `powerbi/TTCDelay.pbip` in Power BI Desktop (step 4 below), or query `data/warehouse/ttc_delay.duckdb` directly (step 3).
+
+## Why
 
 Toronto Open Data publishes each logged subway delay with its time, station, line, cause code and minutes of
 delay and gap. The raw files are hard to use as they are:
@@ -33,7 +67,9 @@ that has to decide which causes and stations to act on first and track whether r
 | Findings memo for a non-technical manager (real data to August 2026) | `FINDINGS.md` |
 | Station matching report and list of unmatched names | `reports/station_matching.csv`, `reports/station_unmatched.csv` |
 
-## Install
+## Usage
+
+### Install
 
 Requires Python 3.10 or later.
 
@@ -42,8 +78,6 @@ python3 -m pip install -r requirements.txt     # pandas, duckdb, openpyxl, reque
 # or, as a package with the `ttc-delay` command:
 python3 -m pip install -e ".[dev]"
 ```
-
-## Quickstart
 
 ### 1. Offline, on the committed sample
 
@@ -279,24 +313,6 @@ shrunk_i = (1 - B_i) * x_i + B_i * mu_L
   left out of that period.
 - `station_ranking_for(from, to)` is a DuckDB table macro, so any other window can be ranked.
 
-## Limitations
-
-- **No exposure data.** The files contain no ridership, trips or service hours, so rates are per
-  incident, not per passenger or per train. Minutes per incident measures severity, not frequency.
-- **Recording practice changes.** About two-thirds of logged incidents record 0 minutes, and how much is
-  logged changes over time. Incident counts are therefore less comparable across years than minutes.
-- **Single extreme incidents still dominate short windows.** Shrinkage handles small samples, not heavy
-  tails. Two stations top the last-12-month list because of one January 2026 ice storm incident each (see
-  `FINDINGS.md`). The model's normal approximation is rough for data this skewed.
-- **Station matching and cause categories are judgement calls.** The alias and review files are curated
-  by hand, and new spellings in future files go to `reports/station_unmatched.csv` or are flagged as
-  unreviewed fuzzy matches. Categories by code prefix are not an official TTC grouping.
-- **Power BI checks are structural.** `tools/check_pbip.py` validates the files, references, bindings and
-  SQL twins, but it does not run DAX. The DAX measures follow the same definitions as the SQL twins.
-  Opening the project and refreshing it requires Power BI Desktop on Windows.
-- **Nothing is published to the Power BI service.** The report is a local PBIP project.
-- **No forecasting.** The analysis is descriptive.
-
 ## Repository layout
 
 ```
@@ -318,5 +334,22 @@ FINDINGS.md         findings memo
   subset of those files and is redistributed under the same licence.
 - **Code:** MIT. No third-party code is included. The runtime dependencies (pandas, DuckDB, openpyxl,
   requests) are installed from PyPI.
+
+## Limitations and next steps
+
+- **Rates are per incident.** The files hold no ridership, trips or service hours, so minutes per incident
+  measures severity, not frequency; service-hour data would turn the rankings into rates per train.
+- **Recording practice changes over time** (about two-thirds of logged incidents record 0 minutes), so
+  minutes compare across years better than incident counts.
+- **Heavy tails.** Shrinkage handles small samples, not single extreme incidents: two stations top the
+  last-12-month list because of one January 2026 ice-storm incident each (see `FINDINGS.md`). The normal
+  approximation is rough for data this skewed; a heavy-tailed model is the natural next step.
+- **Judgement calls are explicit files.** Station aliases and fuzzy-match decisions are curated in
+  `reference/`; new spellings land in `reports/station_unmatched.csv` or are flagged as unreviewed. Cause
+  categories by code prefix are an analytical grouping, not an official TTC one.
+- **Power BI checks are structural.** `tools/check_pbip.py` validates the files, references, bindings and
+  SQL twins but does not run DAX. Refreshing the report needs Power BI Desktop on Windows; it is a local PBIP
+  project, not published to the Power BI service.
+- **Descriptive, not a forecast.**
 
 Project period: 2026-02-16 to 2026-03-20.
